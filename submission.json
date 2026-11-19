@@ -1,7 +1,7 @@
 {
   "student_id": "202234561",
   "name": "김은기",
-  "title": "워런 버핏의 투자 원칙과 실제 보유 기록을 활용한 근거 기반 AI 페르소나 챗봇",
+  "title": "머신러닝 기반 투자정보 질의응답 시스템 개발",
   "github_url": "https://github.com/eg-log/investment-qa",
   "demo_url": "",
   "data_type": "text/tabular",
