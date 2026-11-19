@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="직접 학습한 질문 의도 분류기와 공개 SEC 13F 자료를 연결한 투자정보 질의응답 프로토타입">
+  <title>Investment QA | 머신러닝 투자정보 질의응답</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div class="brand"><span class="brandmark">IQ</span><div><strong>Investment QA</strong><span>머신러닝 기반 투자정보 질의응답</span></div></div>
+      <a href="https://github.com/eg-log/investment-qa" target="_blank" rel="noopener noreferrer">소스코드</a>
+    </header>
+    <main>
+      <section class="intro">
+        <p class="eyebrow">ML PROJECT · SEC FORM 13F</p>
+        <h1>투자정보를 질문하면<br>확인 가능한 근거로 답합니다.</h1>
+        <p>직접 학습한 TF-IDF + Logistic Regression 모델로 질문 유형을 분류하고, Berkshire Hathaway의 2025년 1·2분기 공시와 공개된 투자 원칙을 조회합니다.</p>
+        <div class="status" id="status" role="status">학습 모델을 불러오는 중입니다.</div>
+      </section>
+      <section class="chat-layout" aria-label="질의응답 서비스">
+        <div class="chat-panel">
+          <div class="chat-head"><div><h2>질문하기</h2><p>한 번에 한 종목 또는 하나의 투자 원칙을 질문하십시오.</p></div><button id="reset" type="button" class="ghost">초기화</button></div>
+          <div id="messages" class="messages" aria-live="polite"><div class="message assistant">안녕하세요. 공개 투자 원칙과 2025년 1·2분기 SEC 신고 보유 정보를 질문할 수 있습니다.</div></div>
+          <form id="ask-form"><label for="question">질문 입력</label><div class="input-line"><input id="question" autocomplete="off" maxlength="800" placeholder="2025년 1분기 애플 보유 수량은 얼마인가요?" required><button id="send" type="submit" disabled>질문하기</button></div></form>
+        </div>
+        <aside>
+          <section class="panel"><h2>예시 질문</h2><div class="examples" id="examples">
+            <button type="button">워런 버핏은 장기투자를 어떻게 바라보나요?</button>
+            <button type="button">2025년 1분기 애플 보유 수량은 얼마인가요?</button>
+            <button type="button">그럼 2분기는요?</button>
+            <button type="button">분기 사이 컨스텔레이션 보유량은 어떻게 변했나요?</button>
+            <button type="button">왜 애플을 매수했나요?</button>
+          </div></section>
+          <section class="panel"><h2>분류 및 공식 근거</h2><div id="evidence" class="evidence">질문 후 예측된 유형과 근거를 표시합니다.</div></section>
+          <section class="panel note"><h2>정보의 범위</h2><p>13F는 기관의 분기 말 신고 대상 보유 자료입니다. 버핏 개인 계좌·매매 이유·미래 가격을 입증하지 않으며 투자 조언을 제공하지 않습니다.</p><p>주주서한 원칙에는 AI 보조 의역과 원문 검수 대기 항목이 포함되어 있습니다.</p></section>
+        </aside>
+      </section>
+    </main>
+    <footer>기계학습프로그래밍 프로젝트 · GitHub: eg-log/investment-qa · 자료 범위: 2025년 1·2분기</footer>
+  </div>
+</body>
+</html>
