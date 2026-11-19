@@ -2,7 +2,7 @@
 
 워런 버핏의 공개 투자 원칙과 Berkshire Hathaway의 SEC Form 13F 보유 기록을 활용하여, 사용자의 질문을 분류하고 관련 근거를 제시하는 질의응답 시스템을 개발하였다. 단어 TF-IDF와 Logistic Regression을 결합한 베이스라인, 문자 TF-IDF와 Linear SVM을 결합한 비교 모델을 직접 학습하고 동일한 독립 테스트셋에서 평가하였다.
 
-## 0. 프로젝트정보
+## 0. 프로젝트 정보
 
 | 항목 | 내용 |
 |---|---|
@@ -13,7 +13,7 @@
 | 학습 방식 | TF-IDF 특징과 지도학습 분류기의 스크래치 학습 |
 | 최종 모델 | 단어 TF-IDF + Logistic Regression |
 | GitHub | [eg-log/investment-qa](https://github.com/eg-log/investment-qa) |
-| 서비스 | Colab 질의응답 실행 기록 보유. 상시 공개 서비스 URL 미확정 |
+| 서비스 | https://broken-band-007c.eg01020311.workers.dev/ |
 
 핵심 소스와 실행 결과는 [project.ipynb](project.ipynb)에 수록하였다. 학습 가중치, 평가 결과, 근거 데이터는 각각 [models](models/README.md), [평가 분석](docs/EVALUATION.md), [데이터 설명](data/README.md)에서 확인할 수 있다.
 
