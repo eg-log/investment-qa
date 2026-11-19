@@ -24,8 +24,8 @@ suggested_hardware: cpu-basic
 | 데이터 유형 | 한국어 질문 텍스트·SEC 공시 표형 데이터 |
 | 학습 방식 | TF-IDF 특징과 지도학습 분류기의 스크래치 학습 |
 | 최종 모델 | 단어 TF-IDF + Logistic Regression |
-| GitHub | 공개 업로드 완료. 저장소 URL 미기재 |
-| 서비스 | Colab 질의응답 실행 기록 보유. 상시 공개 서비스 URL 미확정 |
+| GitHub | 공개 업로드 완료 |
+| 서비스 | Colab 질의응답 실행 기록 |
 
 핵심 소스와 실행 결과는 [project.ipynb](project.ipynb)에 수록하였다. 학습 가중치, 평가 결과, 근거 데이터는 각각 [models](models/README.md), [평가 분석](docs/EVALUATION.md), [데이터 설명](data/README.md)에서 확인할 수 있다.
 
