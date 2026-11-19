@@ -8,6 +8,7 @@
 | [모델 산출물](../models/README.md) | 모델·검색기·근거·학습 로그·시험 지표 파일 |
 | [평가 분석](EVALUATION.md) | 지표 정의·검증 선택·클래스별 성능·오류 해석 |
 | [실행 및 배포 구성](DEPLOYMENT.md) | CPU 실행 환경·경로·서비스 진입점·플랫폼 설정 |
+| [Cloudflare 배포](CLOUDFLARE.md) | Docker·Workers 구성·계정 설정·배포 검증 |
 | [검증 범위](VALIDATION.md) | 파일 검사·Colab 실행·공개 서비스 검증의 구분 |
 | [검토 순서](CLI_HANDOFF.txt) | 코드와 실험 결과를 연결하는 검토 순서 |
 | [모델 파일 검사](model_import_check.json) | 최신 실행과 저장 산출물의 해시·로그 일치 결과 |

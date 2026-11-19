@@ -1,0 +1,34 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "investment-qa",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-11-19",
+  "workers_dev": true,
+  "preview_urls": false,
+  "containers": [
+    {
+      "class_name": "InvestmentQaContainer",
+      "scheduling_policy": "durable_object",
+      "images": {
+        "app": {
+          "dockerfile": "./Dockerfile",
+          "build_context": "."
+        }
+      }
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "INVESTMENT_QA",
+        "class_name": "InvestmentQaContainer"
+      }
+    ]
+  },
+  "exports": {
+    "InvestmentQaContainer": {
+      "type": "durable-object",
+      "storage": "sqlite"
+    }
+  }
+}

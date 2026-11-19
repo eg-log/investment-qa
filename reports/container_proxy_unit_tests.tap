@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: UI, queue, and asset paths share one named instance
+ok 1 - UI, queue, and asset paths share one named instance
+  ---
+  duration_ms: 23.9806
+  type: 'test'
+  ...
+# Subtest: proxy preserves method, body, path, query, and external origin
+ok 2 - proxy preserves method, body, path, query, and external origin
+  ---
+  duration_ms: 2.1157
+  type: 'test'
+  ...
+# Subtest: streaming responses are returned without collecting their body
+ok 3 - streaming responses are returned without collecting their body
+  ---
+  duration_ms: 0.8991
+  type: 'test'
+  ...
+# Subtest: cold startup requires a successful HTTP probe and disables outbound Internet
+ok 4 - cold startup requires a successful HTTP probe and disables outbound Internet
+  ---
+  duration_ms: 0.8617
+  type: 'test'
+  ...
+# Subtest: an existing container is probed without starting another process
+ok 5 - an existing container is probed without starting another process
+  ---
+  duration_ms: 0.3414
+  type: 'test'
+  ...
+# Subtest: startup failure is reported when HTTP readiness never succeeds
+ok 6 - startup failure is reported when HTTP readiness never succeeds
+  ---
+  duration_ms: 0.8105
+  type: 'test'
+  ...
+# Subtest: failed question POST is not automatically replayed
+ok 7 - failed question POST is not automatically replayed
+  ---
+  duration_ms: 0.6075
+  type: 'test'
+  ...
+# Subtest: local Wrangler origin port is not forwarded as the container port
+ok 8 - local Wrangler origin port is not forwarded as the container port
+  ---
+  duration_ms: 0.354
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 125.6593

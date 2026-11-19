@@ -16,7 +16,7 @@ def inspect_package():
     source = read_json(ROOT / "source_manifest.json")
     failures, pending = [], []
     paths = [path for path in ROOT.rglob("*") if path.is_file()
-             and not any(part in {".git", "__pycache__", ".venv"} for part in path.relative_to(ROOT).parts)]
+             and not any(part in {".git", "__pycache__", ".venv", "node_modules", ".wrangler", ".npm-cache"} for part in path.relative_to(ROOT).parts)]
     for path in paths:
         relative = path.relative_to(ROOT).as_posix()
         if path.suffix == ".py":

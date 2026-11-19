@@ -1,7 +1,10 @@
 {
-  "github_url": "",
+  "github_url": "https://github.com/eg-log/investment-qa",
   "demo_url": "",
   "github_publication_verified": false,
-  "space_deployment_verified": false,
-  "external_prediction_verified": false
+  "external_prediction_verified": false,
+  "github_upload_completed": true,
+  "github_url_source": "author_provided",
+  "target_platform": "cloudflare_containers",
+  "cloudflare_deployment_verified": false
 }

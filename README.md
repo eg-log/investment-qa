@@ -1,15 +1,3 @@
----
-title: 워런 버핏 투자 원칙 분석 챗봇
-emoji: 📚
-colorFrom: blue
-colorTo: green
-sdk: gradio
-sdk_version: 6.32.0
-python_version: "3.13"
-app_file: app.py
-suggested_hardware: cpu-basic
----
-
 # 머신러닝 기반 투자정보 질의응답 시스템
 
 워런 버핏의 공개 투자 원칙과 Berkshire Hathaway의 SEC Form 13F 보유 기록을 활용하여, 사용자의 질문을 분류하고 관련 근거를 제시하는 질의응답 시스템을 개발하였다. 단어 TF-IDF와 Logistic Regression을 결합한 베이스라인, 문자 TF-IDF와 Linear SVM을 결합한 비교 모델을 직접 학습하고 동일한 독립 테스트셋에서 평가하였다.
@@ -24,8 +12,8 @@ suggested_hardware: cpu-basic
 | 데이터 유형 | 한국어 질문 텍스트·SEC 공시 표형 데이터 |
 | 학습 방식 | TF-IDF 특징과 지도학습 분류기의 스크래치 학습 |
 | 최종 모델 | 단어 TF-IDF + Logistic Regression |
-| GitHub | 공개 업로드 완료 |
-| 서비스 | Colab 질의응답 실행 기록 |
+| GitHub | [eg-log/investment-qa](https://github.com/eg-log/investment-qa) |
+| 서비스 | Colab 질의응답 실행 기록 보유. 상시 공개 서비스 URL 미확정 |
 
 핵심 소스와 실행 결과는 [project.ipynb](project.ipynb)에 수록하였다. 학습 가중치, 평가 결과, 근거 데이터는 각각 [models](models/README.md), [평가 분석](docs/EVALUATION.md), [데이터 설명](data/README.md)에서 확인할 수 있다.
 
@@ -48,7 +36,7 @@ suggested_hardware: cpu-basic
 
 | 자료 | 출처·수집 범위 | 이용·검수 상태 | 선정 이유 |
 |---|---|---|---|
-| SEC Form 13F | SEC에서 다운로드한 2025년 3~5월 6~8월 제출분 ZIP 2개 | 공식 공개 자료. 별도 재배포 라이선스는 확인되지 않았으며 원본 ZIP은 저장소에 포함하지 않음 | 기관·보고 기준일·증권 식별자로 보유 사실을 추적할 수 있음 |
+| SEC Form 13F | 작성자가 SEC에서 다운로드한 2025년 3~5월·6~8월 제출분 ZIP 2개 | 공식 공개 자료. 별도 재배포 라이선스는 확인되지 않았으며 원본 ZIP은 저장소에 포함하지 않음 | 기관·보고 기준일·증권 식별자로 보유 사실을 추적할 수 있음 |
 | Berkshire 주주서한 | 2020~2024 보고연도 자료에서 정리한 원칙 요약 14개 | 원문 전체 대신 한국어 의역과 출처를 수록. AI 보조 초안의 독립 수동 검수는 미완료 | 보유 공시에 포함되지 않는 공개 투자 원칙을 별도 근거로 제공 |
 | 질문 데이터 | 공시 사실과 투자 원칙에 연결한 한국어 질문 초안 96개 | AI 보조 작성 사실을 검수 상태 필드에 표시 | 사실·원칙·보유 변화·확인 불가를 구분하는 지도학습 과제 구성 |
 
@@ -147,17 +135,22 @@ Logistic Regression은 12문항 중 8개, SVM은 9개를 맞혔다. 두 모델 �
 
 ## 7. 배포
 
-배포 대상은 Hugging Face Gradio Spaces의 CPU 환경이다. README 상단 설정에서 Python 3.13, Gradio 6.32.0, 진입점 `app.py`를 지정하였다. 실제 학습 모델 두 개와 검색기·근거 데이터가 저장소에 포함되어 있으며, 파일 해시와 학습 로그가 해당 실행과 일치함을 확인하였다.
+배포 대상은 **Cloudflare Workers + Containers**이다. Worker가 요청을 하나의 Durable Object에 전달하고, Durable Object가 Python 컨테이너의 Gradio 서버에 연결한다. 컨테이너에서는 기존 Logistic Regression 모델과 근거 데이터를 로드하며 전처리·학습은 수행하지 않는다.
+
+`Dockerfile`은 Python 3.13 환경과 기존 의존성을 구성한다. `serve_container.py`는 기존 Gradio 앱을 **0.0.0.0:7860**에서 실행한다. `wrangler.jsonc`의 `workers_dev: true` 설정에 따라 최종 URL은 실제 배포 결과의 **workers.dev 도메인**을 사용한다.
 
 | 검증 범위 | 상태 |
 |---|---|
 | Colab 학습·평가·질의응답 | 실행 출력 및 저장 산출물 보유 |
 | 모델·근거 파일 무결성 | 검증 완료 |
-| GitHub 공개 업로드 | 완료 보고, 저장소 URL 미기재 |
-| 상시 공개 서비스 | 미배포·URL 미확정 |
-| 배포 환경의 외부 예측 | 미검증 |
+| GitHub 공개 소스 | [eg-log/investment-qa](https://github.com/eg-log/investment-qa) |
+| 컨테이너 배포 파일·Workers 프록시 | 구성 완료, 프록시 헬퍼 단위 검사 통과 |
+| Docker 이미지 빌드·실제 HTTP 질의응답 | 미실행 |
+| Cloudflare 원격 배포·외부 예측 | 미실행·공개 URL 미확정 |
 
-노트북의 `gradio.live` 주소는 Colab 실행 세션의 임시 링크이므로 상시 공개 서비스 주소로 사용하지 않는다. [실행·배포 구성](docs/DEPLOYMENT.md), [산출물 검증 범위](docs/VALIDATION.md)
+동일 컨테이너로 요청을 전달하여 Gradio 큐와 후속 질문 상태를 유지한다. 컨테이너 시작 시 HTTP 준비 상태를 확인하고 SSE 응답을 스트리밍으로 전달한다. 5분 유휴 중지·재배포 시 메모리의 대화 상태는 초기화되며 저장 가중치는 다음 시작 시 다시 로드된다.
+
+Workers Paid 플랜과 사용량 과금이 적용되는 구성이다. 계정 인증·플랜 활성화·결제·실제 배포는 아직 실행하지 않았다. [Cloudflare 구성 및 실행 절차](docs/CLOUDFLARE.md), [산출물 검증 범위](docs/VALIDATION.md)
 
 ## 8. 실행방법
 
@@ -173,6 +166,15 @@ python app.py
 ```
 
 로컬 접속 주소는 `http://127.0.0.1:7860`이다. 가중치 경로는 기본 `models/`이며 `BUFFETT_MODEL_DIR`로 다른 경로를 지정할 수 있다. 현재 저장소에는 모델과 근거 파일이 포함되어 있으므로 추론에 SEC 원본 ZIP 업로드나 재학습은 필요하지 않다.
+
+컨테이너 실행은 다음 명령을 사용한다. Docker 엔진이 실행되어 있어야 한다.
+
+```bash
+docker build --platform linux/amd64 -t investment-qa .
+docker run --rm --name investment-qa-local -p 127.0.0.1:7860:7860 investment-qa
+```
+
+Wrangler는 Node.js 22 이상이 필요하며 제공된 GitHub Actions 구성은 Node.js 24를 사용한다. [package.json](package.json)의 `npm run check`와 `npm test`로 JavaScript 구문 및 프록시 검사를 수행한다. 계정·플랜 설정 후 `npm install`과 `npm run deploy`로 이미지와 Worker를 배포한다.
 
 전체 데이터 정형화·학습 재현은 [project.ipynb](project.ipynb)의 `train` 모드에서 SEC 원본 ZIP 두 개를 입력하여 수행한다. 노트북의 `inference` 모드는 저장한 모델 폴더 또는 학습 결과 ZIP을 로드한다. [검토 자료 목록](docs/README.md)
 
