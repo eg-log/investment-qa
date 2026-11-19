@@ -1,0 +1,31 @@
+{
+  "source_run": "runs/20261119_115608_098551",
+  "archive_sha256": "ee4a49dc8037fde484385247fccf7d38d3215e805c0d84905f04ed1a25e71af0",
+  "model_files_present": [
+    "char_tfidf_svm.joblib",
+    "comparison.csv",
+    "knowledge.json",
+    "manifest.json",
+    "retriever.joblib",
+    "selection.json",
+    "test_results.json",
+    "training_log.json",
+    "word_tfidf_logreg.joblib"
+  ],
+  "model_file_hash_checks": {
+    "knowledge.json": true,
+    "retriever.joblib": true,
+    "word_tfidf_logreg.joblib": true,
+    "training_log.json": true,
+    "selection.json": true,
+    "char_tfidf_svm.joblib": true,
+    "test_results.json": true,
+    "comparison.csv": true
+  },
+  "training_log_matches_notebook": true,
+  "selection_matches_notebook": true,
+  "original_notebook_copy_unchanged": true,
+  "retrained": false,
+  "inference_run": false,
+  "public_deployment_verified": false
+}

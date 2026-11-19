@@ -1,0 +1,159 @@
+[
+  {
+    "question": "워런 버핏은 장기투자를 어떻게 바라보나요?",
+    "model": "word_tfidf_logreg",
+    "predicted_intent": "INVESTMENT_PRINCIPLE",
+    "response_intent": "INVESTMENT_PRINCIPLE",
+    "guard_override": null,
+    "answer": "공식 주주서한의 원칙을 한국어로 요약합니다. 실제 인물의 새로운 발언을 생성하는 방식은 아닙니다.\n\n[P2020_1] 상장 주식도 기업의 일부 소유로 보고 장기적인 사업 성과를 살핍니다.\n적용 조건: 시장성 주식의 소유 관점을 설명할 때\n\n[P2021_1] 주식을 단기 시장 움직임을 이용하는 수단으로 보기보다 장기 사업 실적에 대한 기대를 바탕으로 소유합니다.\n적용 조건: 주식 보유 목적과 단기 매매의 차이를 설명할 때\n\n[P2022_1] 오래 보유한 소수의 성공적인 사업이 시간이 흐르며 전체 투자 성과에 크게 기여할 수 있다고 설명합니다.\n적용 조건: 코카콜라·아메리칸 익스프레스 보유 사례에서 설명한 장기 효과",
+    "evidence_ids": [
+      "P2020_1",
+      "P2021_1",
+      "P2022_1"
+    ],
+    "sources": [
+      {
+        "evidence_id": "P2020_1",
+        "evidence_type": "STATED",
+        "urls": [
+          "https://www.berkshirehathaway.com/letters/2020ltr.pdf"
+        ],
+        "location": "PDF 2쪽, 보유 주식을 사업의 집합으로 설명하는 문단"
+      },
+      {
+        "evidence_id": "P2021_1",
+        "evidence_type": "STATED",
+        "urls": [
+          "https://www.berkshirehathaway.com/letters/2021ltr.pdf"
+        ],
+        "location": "PDF 2쪽, What You Own"
+      },
+      {
+        "evidence_id": "P2022_1",
+        "evidence_type": "STATED",
+        "urls": [
+          "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+        ],
+        "location": "PDF 3~4쪽, The Secret Sauce"
+      }
+    ],
+    "state": {
+      "last_question": "워런 버핏은 장기투자를 어떻게 바라보나요?",
+      "intent": "INVESTMENT_PRINCIPLE",
+      "period": "2025-06-30"
+    },
+    "elapsed_seconds": 0.0025508979999813164
+  },
+  {
+    "question": "2025년 1분기 애플 보유 수량은 얼마인가요?",
+    "model": "word_tfidf_logreg",
+    "predicted_intent": "HOLDING_FACT",
+    "response_intent": "HOLDING_FACT",
+    "guard_override": null,
+    "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_e33bce7a484ecb34] 2025-03-31 APPLE INC (037833100, COM): 300,000,000주, 평가금액 66,639,000,000 USD.\n\n보고 기준일은 2025-03-31이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+    "evidence_ids": [
+      "H_e33bce7a484ecb34"
+    ],
+    "sources": [
+      {
+        "evidence_id": "H_e33bce7a484ecb34",
+        "evidence_type": "CALCULATED",
+        "urls": [
+          "https://www.sec.gov/Archives/edgar/data/1067983/000095012325005701/0000950123-25-005701-index.html"
+        ],
+        "location": null
+      }
+    ],
+    "state": {
+      "last_question": "2025년 1분기 애플 보유 수량은 얼마인가요?",
+      "intent": "HOLDING_FACT",
+      "period": "2025-03-31",
+      "cusip": "037833100"
+    },
+    "elapsed_seconds": 0.003035568999962379
+  },
+  {
+    "question": "그럼 2분기는요?",
+    "model": "word_tfidf_logreg",
+    "predicted_intent": "HOLDING_FACT",
+    "response_intent": "HOLDING_FACT",
+    "guard_override": null,
+    "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_2df6adcca523c7fb] 2025-06-30 APPLE INC (037833100, COM): 280,000,000주, 평가금액 57,447,600,000 USD.\n\n보고 기준일은 2025-06-30이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+    "evidence_ids": [
+      "H_2df6adcca523c7fb"
+    ],
+    "sources": [
+      {
+        "evidence_id": "H_2df6adcca523c7fb",
+        "evidence_type": "CALCULATED",
+        "urls": [
+          "https://www.sec.gov/Archives/edgar/data/1067983/000095012325008343/0000950123-25-008343-index.html"
+        ],
+        "location": null
+      }
+    ],
+    "state": {
+      "last_question": "2025년 1분기 애플 보유 수량은 얼마인가요? 후속 질문: 그럼 2분기는요?",
+      "intent": "HOLDING_FACT",
+      "period": "2025-06-30",
+      "cusip": "037833100"
+    },
+    "elapsed_seconds": 0.003027781000014329
+  },
+  {
+    "question": "분기 사이 컨스텔레이션 보유량은 어떻게 변했나요?",
+    "model": "word_tfidf_logreg",
+    "predicted_intent": "HOLDING_CHANGE",
+    "response_intent": "HOLDING_CHANGE",
+    "guard_override": null,
+    "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[C_9f66e9460974f8b1] CONSTELLATION BRANDS INC (21036P108)의 공개 신고 수량: 12,009,000주 → 13,400,000주, 차이 +1,391,000주. POSITION_INCREASED.\n\n보유 변화는 체결 기록이 아닙니다. 미신고는 비교 계산에서 0으로 두었고, 분할·합병·식별자 변경은 별도 확인하지 못했습니다. 매매 동기는 UNKNOWN입니다.",
+    "evidence_ids": [
+      "C_9f66e9460974f8b1"
+    ],
+    "sources": [
+      {
+        "evidence_id": "C_9f66e9460974f8b1",
+        "evidence_type": "CALCULATED",
+        "urls": [
+          "https://www.sec.gov/Archives/edgar/data/1067983/000095012325005701/0000950123-25-005701-index.html",
+          "https://www.sec.gov/Archives/edgar/data/1067983/000095012325008343/0000950123-25-008343-index.html"
+        ],
+        "location": null
+      }
+    ],
+    "state": {
+      "last_question": "분기 사이 컨스텔레이션 보유량은 어떻게 변했나요?",
+      "intent": "HOLDING_CHANGE",
+      "period": "2025-06-30",
+      "cusip": "21036P108"
+    },
+    "elapsed_seconds": 0.0031250999999201667
+  },
+  {
+    "question": "왜 애플을 매수했나요?",
+    "model": "word_tfidf_logreg",
+    "predicted_intent": "UNSUPPORTED",
+    "response_intent": "UNSUPPORTED",
+    "guard_override": "범위·미확인 동기 보호 규칙",
+    "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "sources": [
+      {
+        "evidence_id": "SCOPE_13F",
+        "evidence_type": "UNKNOWN",
+        "urls": [
+          "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+        ],
+        "location": null
+      }
+    ],
+    "state": {
+      "last_question": "왜 애플을 매수했나요?",
+      "intent": "UNSUPPORTED",
+      "period": "2025-06-30"
+    },
+    "elapsed_seconds": 0.001115097999900172
+  }
+]

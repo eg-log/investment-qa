@@ -1,0 +1,42 @@
+{
+  "source_notebook_sha256": "bee185049a339265d018a18ed8ac091b8eec50942bc7ea4e11b0708973d97fd9",
+  "source_run": "runs/20261119_115608_098551",
+  "code_checks_passed": true,
+  "local_inference_ready": false,
+  "code_cells": 13,
+  "executed_code_cells": 13,
+  "notebook_copy_unchanged": true,
+  "failures": [],
+  "pending": [
+    "배포 환경 설치 필요: gradio==6.32.0",
+    "배포 환경 설치 필요: scikit-learn==1.6.1",
+    "배포 환경 설치 필요: numpy==2.4.6",
+    "배포 환경 설치 필요: pandas==2.2.3"
+  ],
+  "environment": {
+    "gradio": {
+      "required": "6.32.0",
+      "actual": "not_installed"
+    },
+    "scikit-learn": {
+      "required": "1.6.1",
+      "actual": "1.9.1"
+    },
+    "numpy": {
+      "required": "2.4.6",
+      "actual": "2.5.3"
+    },
+    "pandas": {
+      "required": "2.2.3",
+      "actual": "3.0.6"
+    },
+    "joblib": {
+      "required": "1.6.0",
+      "actual": "1.6.0"
+    }
+  },
+  "training_executed_by_check": false,
+  "metrics_recomputed_by_check": false,
+  "public_service_tested_by_check": false,
+  "report_scope": "public_release_static_and_dependency_checks"
+}

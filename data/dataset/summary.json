@@ -1,0 +1,46 @@
+{
+  "split_sha256": "99e8f21df00046aee6e4f4a1abae083c45064d959d203834db3bee4e6beb1bd3",
+  "matches_final_checkpoint": true,
+  "splits": {
+    "train": {
+      "rows": 57,
+      "groups": 16,
+      "classes": {
+        "INVESTMENT_PRINCIPLE": 21,
+        "HOLDING_FACT": 12,
+        "HOLDING_CHANGE": 12,
+        "UNSUPPORTED": 12
+      }
+    },
+    "validation": {
+      "rows": 15,
+      "groups": 3,
+      "classes": {
+        "INVESTMENT_PRINCIPLE": 9,
+        "HOLDING_FACT": 2,
+        "HOLDING_CHANGE": 2,
+        "UNSUPPORTED": 2
+      }
+    },
+    "test": {
+      "rows": 12,
+      "groups": 4,
+      "classes": {
+        "INVESTMENT_PRINCIPLE": 4,
+        "HOLDING_FACT": 4,
+        "HOLDING_CHANGE": 2,
+        "UNSUPPORTED": 2
+      }
+    },
+    "development": {
+      "rows": 12,
+      "groups": 3,
+      "classes": {
+        "INVESTMENT_PRINCIPLE": 6,
+        "HOLDING_FACT": 2,
+        "HOLDING_CHANGE": 2,
+        "UNSUPPORTED": 2
+      }
+    }
+  }
+}

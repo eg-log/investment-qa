@@ -1,0 +1,32 @@
+{
+  "training_complete": true,
+  "selected_model": "word_tfidf_logreg",
+  "models": [
+    "word_tfidf_logreg",
+    "char_tfidf_svm"
+  ],
+  "seed": 42,
+  "trained_at_utc": "2026-11-19T11:56:47.135771+00:00",
+  "sklearn_version": "1.6.1",
+  "numpy_version": "2.4.6",
+  "pandas_version": "2.2.3",
+  "joblib_version": "1.6.0",
+  "task": "four_class_question_intent",
+  "answer_generation": "evidence_templates_not_trained_language_generation",
+  "split_sha256": "99e8f21df00046aee6e4f4a1abae083c45064d959d203834db3bee4e6beb1bd3",
+  "artifact_sha256": {
+    "knowledge.json": "5262fb0ded1278ec06ead051b5b845d4b1be368fe177923204a2c5b640a78de4",
+    "retriever.joblib": "e381288c58fc09979a310adeed4f2e096ae976531c7e6ba03f3af3b20a696295",
+    "word_tfidf_logreg.joblib": "a58444a6d4b71224611ddcebdd84b61bdbd989775f8a79b913801ddc4a3d1cb5",
+    "training_log.json": "cd086345a3ce2059130d4e24f002b5aacd5229319d3c633e3e4a35f2350a4133",
+    "selection.json": "94119444ff5df2b7e0b2c7a6b79b0277b338f773dede1bf788fcd7be6e48ac69",
+    "char_tfidf_svm.joblib": "3fd15f70bf5f165ec6aaa9eebb2013b8f277ad3b037bf86b69f0f64fa1de9afd",
+    "test_results.json": "bdc3cf0e5205d2257d6e8a5857cebde57cb5c04acfaebde37d345fb33c2055da",
+    "comparison.csv": "410da2def91215b1845e7a30330c313c05c3153857ad10a70bd2842f408387fc"
+  },
+  "selection": {
+    "selected_model": "word_tfidf_logreg",
+    "rule": "validation_macro_f1_then_accuracy; ties_use_baseline",
+    "test_used_for_selection": false
+  }
+}

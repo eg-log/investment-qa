@@ -1,0 +1,856 @@
+{
+  "word_tfidf_logreg": {
+    "pipeline_evidence_recall_at_3": 0.6,
+    "supported_test_questions": 10,
+    "records": [
+      {
+        "sample_id": "Q037",
+        "expected_evidence_ids": [
+          "P2021_3"
+        ],
+        "question": "버핏의 투자 원칙 중 주주에게 정보를 공정하게 전하는 방침을 설명해 주세요.",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "INVESTMENT_PRINCIPLE",
+        "response_intent": "INVESTMENT_PRINCIPLE",
+        "guard_override": null,
+        "answer": "공식 주주서한의 원칙을 한국어로 요약합니다. 실제 인물의 새로운 발언을 생성하는 방식은 아닙니다.\n\n[P2021_3] 주주를 동등하게 대하고 특정 분석가나 대형 기관에게만 정보를 설명하지 않으며, 중요한 소식을 주주들이 숙고할 수 있도록 전달하려 합니다.\n적용 조건: 주주와의 정보 전달 공정성을 설명할 때\n\n[P2022_2] 가치를 높이는 가격의 자사주 매입은 잔여 주주의 몫을 키우지만, 과도한 가격의 환매는 잔여 주주에게 손해가 될 수 있습니다.\n적용 조건: 자사주 매입 가격의 적정성을 평가할 때\n\n[P2022_1] 오래 보유한 소수의 성공적인 사업이 시간이 흐르며 전체 투자 성과에 크게 기여할 수 있다고 설명합니다.\n적용 조건: 코카콜라·아메리칸 익스프레스 보유 사례에서 설명한 장기 효과",
+        "evidence_ids": [
+          "P2021_3",
+          "P2022_2",
+          "P2022_1"
+        ],
+        "sources": [
+          {
+            "evidence_id": "P2021_3",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2021ltr.pdf"
+            ],
+            "location": "PDF 2쪽, 모든 주주를 동등하게 대하는 보고 방침 문단"
+          },
+          {
+            "evidence_id": "P2022_2",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 5쪽, 주식 수 감소와 가치 증대의 조건"
+          },
+          {
+            "evidence_id": "P2022_1",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 3~4쪽, The Secret Sauce"
+          }
+        ],
+        "state": {
+          "last_question": "버핏의 투자 원칙 중 주주에게 정보를 공정하게 전하는 방침을 설명해 주세요.",
+          "intent": "INVESTMENT_PRINCIPLE",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.00517842399995061
+      },
+      {
+        "sample_id": "Q038",
+        "expected_evidence_ids": [
+          "P2021_3"
+        ],
+        "question": "기관 투자자에게만 먼저 소식을 전하나요? 주주를 대하는 공개 원칙이 궁금합니다.",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": null,
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "기관 투자자에게만 먼저 소식을 전하나요? 주주를 대하는 공개 원칙이 궁금합니다.",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0012688140000136627
+      },
+      {
+        "sample_id": "Q039",
+        "expected_evidence_ids": [
+          "P2022_3"
+        ],
+        "question": "버핏은 시장 가격이 항상 가치를 반영한다는 투자 원칙에 동의하나요?",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "INVESTMENT_PRINCIPLE",
+        "response_intent": "INVESTMENT_PRINCIPLE",
+        "guard_override": null,
+        "answer": "공식 주주서한의 원칙을 한국어로 요약합니다. 실제 인물의 새로운 발언을 생성하는 방식은 아닙니다.\n\n[P2022_3] 시장성 증권의 가격은 비합리적으로 높거나 낮아질 수 있으므로 시장 가격과 사업의 경제적 가치를 같은 것으로 보지 않습니다.\n적용 조건: 시장 가격이 효율적으로 가치를 반영하는지 판단할 때\n\n[P2022_2] 가치를 높이는 가격의 자사주 매입은 잔여 주주의 몫을 키우지만, 과도한 가격의 환매는 잔여 주주에게 손해가 될 수 있습니다.\n적용 조건: 자사주 매입 가격의 적정성을 평가할 때\n\n[P2020_3] 자사주 매입은 주당 내재가치를 높이고 기회와 위험에 대응할 여유 자금을 남기는 가격에서 검토합니다.\n적용 조건: 버크셔 자체 주식의 환매 판단",
+        "evidence_ids": [
+          "P2022_3",
+          "P2022_2",
+          "P2020_3"
+        ],
+        "sources": [
+          {
+            "evidence_id": "P2022_3",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 3쪽, What We Do의 비합리적 증권 가격 문단"
+          },
+          {
+            "evidence_id": "P2022_2",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 5쪽, 주식 수 감소와 가치 증대의 조건"
+          },
+          {
+            "evidence_id": "P2020_3",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2020ltr.pdf"
+            ],
+            "location": "PDF 5쪽, 버크셔 자사주 매입 기준 문단"
+          }
+        ],
+        "state": {
+          "last_question": "버핏은 시장 가격이 항상 가치를 반영한다는 투자 원칙에 동의하나요?",
+          "intent": "INVESTMENT_PRINCIPLE",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0022713639999665247
+      },
+      {
+        "sample_id": "Q040",
+        "expected_evidence_ids": [
+          "P2022_3"
+        ],
+        "question": "시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요.",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": null,
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요.",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.001079091000065091
+      },
+      {
+        "sample_id": "Q089",
+        "expected_evidence_ids": [
+          "H_c16a810ea699c948"
+        ],
+        "question": "2025년 1분기에 버크셔가 공개한 COCA COLA CO의 보유 수량을 확인하고 싶어요.",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "HOLDING_FACT",
+        "response_intent": "HOLDING_FACT",
+        "guard_override": null,
+        "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_c16a810ea699c948] 2025-03-31 COCA COLA CO (191216100, COM): 400,000,000주, 평가금액 28,648,000,000 USD.\n\n보고 기준일은 2025-03-31이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+        "evidence_ids": [
+          "H_c16a810ea699c948"
+        ],
+        "sources": [
+          {
+            "evidence_id": "H_c16a810ea699c948",
+            "evidence_type": "CALCULATED",
+            "urls": [
+              "https://www.sec.gov/Archives/edgar/data/1067983/000095012325005701/0000950123-25-005701-index.html"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "2025년 1분기에 버크셔가 공개한 COCA COLA CO의 보유 수량을 확인하고 싶어요.",
+          "intent": "HOLDING_FACT",
+          "period": "2025-03-31",
+          "cusip": "191216100"
+        },
+        "elapsed_seconds": 0.043166430000042055
+      },
+      {
+        "sample_id": "Q090",
+        "expected_evidence_ids": [
+          "H_1d44c4c6c631ac72"
+        ],
+        "question": "2025년 2분기에 버크셔가 공개한 COCA COLA CO의 보유 수량을 확인하고 싶어요.",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "HOLDING_FACT",
+        "response_intent": "HOLDING_FACT",
+        "guard_override": null,
+        "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_1d44c4c6c631ac72] 2025-06-30 COCA COLA CO (191216100, COM): 400,000,000주, 평가금액 28,300,000,000 USD.\n\n보고 기준일은 2025-06-30이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+        "evidence_ids": [
+          "H_1d44c4c6c631ac72"
+        ],
+        "sources": [
+          {
+            "evidence_id": "H_1d44c4c6c631ac72",
+            "evidence_type": "CALCULATED",
+            "urls": [
+              "https://www.sec.gov/Archives/edgar/data/1067983/000095012325008343/0000950123-25-008343-index.html"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "2025년 2분기에 버크셔가 공개한 COCA COLA CO의 보유 수량을 확인하고 싶어요.",
+          "intent": "HOLDING_FACT",
+          "period": "2025-06-30",
+          "cusip": "191216100"
+        },
+        "elapsed_seconds": 0.0032839149999972506
+      },
+      {
+        "sample_id": "Q091",
+        "expected_evidence_ids": [
+          "C_e8947790f3bb1e53"
+        ],
+        "question": "COCA COLA CO은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": null,
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "COCA COLA CO은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.001172941000049832
+      },
+      {
+        "sample_id": "Q092",
+        "expected_evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "question": "공시만 읽고 버핏 개인이 COCA COLA CO을 선택한 진짜 동기를 알아낼 수 있나요?",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": "범위·미확인 동기 보호 규칙",
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "공시만 읽고 버핏 개인이 COCA COLA CO을 선택한 진짜 동기를 알아낼 수 있나요?",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0009480469999516572
+      },
+      {
+        "sample_id": "Q093",
+        "expected_evidence_ids": [
+          "H_76fd11a5d73f42b1"
+        ],
+        "question": "2025년 1분기에 버크셔가 공개한 CHEVRON CORP NEW의 보유 수량을 확인하고 싶어요.",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "HOLDING_FACT",
+        "response_intent": "HOLDING_FACT",
+        "guard_override": null,
+        "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_76fd11a5d73f42b1] 2025-03-31 CHEVRON CORP NEW (166764100, COM): 118,610,534주, 평가금액 19,842,356,232 USD.\n\n보고 기준일은 2025-03-31이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+        "evidence_ids": [
+          "H_76fd11a5d73f42b1"
+        ],
+        "sources": [
+          {
+            "evidence_id": "H_76fd11a5d73f42b1",
+            "evidence_type": "CALCULATED",
+            "urls": [
+              "https://www.sec.gov/Archives/edgar/data/1067983/000095012325005701/0000950123-25-005701-index.html"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "2025년 1분기에 버크셔가 공개한 CHEVRON CORP NEW의 보유 수량을 확인하고 싶어요.",
+          "intent": "HOLDING_FACT",
+          "period": "2025-03-31",
+          "cusip": "166764100"
+        },
+        "elapsed_seconds": 0.004462030000013328
+      },
+      {
+        "sample_id": "Q094",
+        "expected_evidence_ids": [
+          "H_ce7dbee9e528c3ec"
+        ],
+        "question": "2025년 2분기에 버크셔가 공개한 CHEVRON CORP NEW의 보유 수량을 확인하고 싶어요.",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "HOLDING_FACT",
+        "response_intent": "HOLDING_FACT",
+        "guard_override": null,
+        "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_ce7dbee9e528c3ec] 2025-06-30 CHEVRON CORP NEW (166764100, COM): 122,064,792주, 평가금액 17,478,457,567 USD.\n\n보고 기준일은 2025-06-30이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+        "evidence_ids": [
+          "H_ce7dbee9e528c3ec"
+        ],
+        "sources": [
+          {
+            "evidence_id": "H_ce7dbee9e528c3ec",
+            "evidence_type": "CALCULATED",
+            "urls": [
+              "https://www.sec.gov/Archives/edgar/data/1067983/000095012325008343/0000950123-25-008343-index.html"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "2025년 2분기에 버크셔가 공개한 CHEVRON CORP NEW의 보유 수량을 확인하고 싶어요.",
+          "intent": "HOLDING_FACT",
+          "period": "2025-06-30",
+          "cusip": "166764100"
+        },
+        "elapsed_seconds": 0.0032342910000124903
+      },
+      {
+        "sample_id": "Q095",
+        "expected_evidence_ids": [
+          "C_0bbc1ad9aa9346a3"
+        ],
+        "question": "CHEVRON CORP NEW은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": null,
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "CHEVRON CORP NEW은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0011018420000254991
+      },
+      {
+        "sample_id": "Q096",
+        "expected_evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "question": "공시만 읽고 버핏 개인이 CHEVRON CORP NEW을 선택한 진짜 동기를 알아낼 수 있나요?",
+        "model": "word_tfidf_logreg",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": "범위·미확인 동기 보호 규칙",
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "공시만 읽고 버핏 개인이 CHEVRON CORP NEW을 선택한 진짜 동기를 알아낼 수 있나요?",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0009434549999696173
+      }
+    ]
+  },
+  "char_tfidf_svm": {
+    "pipeline_evidence_recall_at_3": 0.7,
+    "supported_test_questions": 10,
+    "records": [
+      {
+        "sample_id": "Q037",
+        "expected_evidence_ids": [
+          "P2021_3"
+        ],
+        "question": "버핏의 투자 원칙 중 주주에게 정보를 공정하게 전하는 방침을 설명해 주세요.",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "INVESTMENT_PRINCIPLE",
+        "response_intent": "INVESTMENT_PRINCIPLE",
+        "guard_override": null,
+        "answer": "공식 주주서한의 원칙을 한국어로 요약합니다. 실제 인물의 새로운 발언을 생성하는 방식은 아닙니다.\n\n[P2021_3] 주주를 동등하게 대하고 특정 분석가나 대형 기관에게만 정보를 설명하지 않으며, 중요한 소식을 주주들이 숙고할 수 있도록 전달하려 합니다.\n적용 조건: 주주와의 정보 전달 공정성을 설명할 때\n\n[P2022_2] 가치를 높이는 가격의 자사주 매입은 잔여 주주의 몫을 키우지만, 과도한 가격의 환매는 잔여 주주에게 손해가 될 수 있습니다.\n적용 조건: 자사주 매입 가격의 적정성을 평가할 때\n\n[P2022_1] 오래 보유한 소수의 성공적인 사업이 시간이 흐르며 전체 투자 성과에 크게 기여할 수 있다고 설명합니다.\n적용 조건: 코카콜라·아메리칸 익스프레스 보유 사례에서 설명한 장기 효과",
+        "evidence_ids": [
+          "P2021_3",
+          "P2022_2",
+          "P2022_1"
+        ],
+        "sources": [
+          {
+            "evidence_id": "P2021_3",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2021ltr.pdf"
+            ],
+            "location": "PDF 2쪽, 모든 주주를 동등하게 대하는 보고 방침 문단"
+          },
+          {
+            "evidence_id": "P2022_2",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 5쪽, 주식 수 감소와 가치 증대의 조건"
+          },
+          {
+            "evidence_id": "P2022_1",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 3~4쪽, The Secret Sauce"
+          }
+        ],
+        "state": {
+          "last_question": "버핏의 투자 원칙 중 주주에게 정보를 공정하게 전하는 방침을 설명해 주세요.",
+          "intent": "INVESTMENT_PRINCIPLE",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0027423929999486063
+      },
+      {
+        "sample_id": "Q038",
+        "expected_evidence_ids": [
+          "P2021_3"
+        ],
+        "question": "기관 투자자에게만 먼저 소식을 전하나요? 주주를 대하는 공개 원칙이 궁금합니다.",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "INVESTMENT_PRINCIPLE",
+        "response_intent": "INVESTMENT_PRINCIPLE",
+        "guard_override": null,
+        "answer": "공식 주주서한의 원칙을 한국어로 요약합니다. 실제 인물의 새로운 발언을 생성하는 방식은 아닙니다.\n\n[P2021_3] 주주를 동등하게 대하고 특정 분석가나 대형 기관에게만 정보를 설명하지 않으며, 중요한 소식을 주주들이 숙고할 수 있도록 전달하려 합니다.\n적용 조건: 주주와의 정보 전달 공정성을 설명할 때\n\n[P2023_2] 능력 있고 신뢰할 수 있는 경영자를 원하지만 사람의 신뢰성을 판단하는 일도 어렵다는 점을 인정합니다.\n적용 조건: 경영진의 역량과 신뢰를 판단할 때\n\n[P2022_2] 가치를 높이는 가격의 자사주 매입은 잔여 주주의 몫을 키우지만, 과도한 가격의 환매는 잔여 주주에게 손해가 될 수 있습니다.\n적용 조건: 자사주 매입 가격의 적정성을 평가할 때",
+        "evidence_ids": [
+          "P2021_3",
+          "P2023_2",
+          "P2022_2"
+        ],
+        "sources": [
+          {
+            "evidence_id": "P2021_3",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2021ltr.pdf"
+            ],
+            "location": "PDF 2쪽, 모든 주주를 동등하게 대하는 보고 방침 문단"
+          },
+          {
+            "evidence_id": "P2023_2",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2023ltr.pdf"
+            ],
+            "location": "PDF 4~5쪽, What We Do의 경영자 신뢰 문단"
+          },
+          {
+            "evidence_id": "P2022_2",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 5쪽, 주식 수 감소와 가치 증대의 조건"
+          }
+        ],
+        "state": {
+          "last_question": "기관 투자자에게만 먼저 소식을 전하나요? 주주를 대하는 공개 원칙이 궁금합니다.",
+          "intent": "INVESTMENT_PRINCIPLE",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0021355029999767794
+      },
+      {
+        "sample_id": "Q039",
+        "expected_evidence_ids": [
+          "P2022_3"
+        ],
+        "question": "버핏은 시장 가격이 항상 가치를 반영한다는 투자 원칙에 동의하나요?",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "INVESTMENT_PRINCIPLE",
+        "response_intent": "INVESTMENT_PRINCIPLE",
+        "guard_override": null,
+        "answer": "공식 주주서한의 원칙을 한국어로 요약합니다. 실제 인물의 새로운 발언을 생성하는 방식은 아닙니다.\n\n[P2022_3] 시장성 증권의 가격은 비합리적으로 높거나 낮아질 수 있으므로 시장 가격과 사업의 경제적 가치를 같은 것으로 보지 않습니다.\n적용 조건: 시장 가격이 효율적으로 가치를 반영하는지 판단할 때\n\n[P2022_2] 가치를 높이는 가격의 자사주 매입은 잔여 주주의 몫을 키우지만, 과도한 가격의 환매는 잔여 주주에게 손해가 될 수 있습니다.\n적용 조건: 자사주 매입 가격의 적정성을 평가할 때\n\n[P2020_3] 자사주 매입은 주당 내재가치를 높이고 기회와 위험에 대응할 여유 자금을 남기는 가격에서 검토합니다.\n적용 조건: 버크셔 자체 주식의 환매 판단",
+        "evidence_ids": [
+          "P2022_3",
+          "P2022_2",
+          "P2020_3"
+        ],
+        "sources": [
+          {
+            "evidence_id": "P2022_3",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 3쪽, What We Do의 비합리적 증권 가격 문단"
+          },
+          {
+            "evidence_id": "P2022_2",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2022ltr.pdf"
+            ],
+            "location": "PDF 5쪽, 주식 수 감소와 가치 증대의 조건"
+          },
+          {
+            "evidence_id": "P2020_3",
+            "evidence_type": "STATED",
+            "urls": [
+              "https://www.berkshirehathaway.com/letters/2020ltr.pdf"
+            ],
+            "location": "PDF 5쪽, 버크셔 자사주 매입 기준 문단"
+          }
+        ],
+        "state": {
+          "last_question": "버핏은 시장 가격이 항상 가치를 반영한다는 투자 원칙에 동의하나요?",
+          "intent": "INVESTMENT_PRINCIPLE",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0020761700000093697
+      },
+      {
+        "sample_id": "Q040",
+        "expected_evidence_ids": [
+          "P2022_3"
+        ],
+        "question": "시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요.",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": null,
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요.",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0010074050001094292
+      },
+      {
+        "sample_id": "Q089",
+        "expected_evidence_ids": [
+          "H_c16a810ea699c948"
+        ],
+        "question": "2025년 1분기에 버크셔가 공개한 COCA COLA CO의 보유 수량을 확인하고 싶어요.",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "HOLDING_FACT",
+        "response_intent": "HOLDING_FACT",
+        "guard_override": null,
+        "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_c16a810ea699c948] 2025-03-31 COCA COLA CO (191216100, COM): 400,000,000주, 평가금액 28,648,000,000 USD.\n\n보고 기준일은 2025-03-31이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+        "evidence_ids": [
+          "H_c16a810ea699c948"
+        ],
+        "sources": [
+          {
+            "evidence_id": "H_c16a810ea699c948",
+            "evidence_type": "CALCULATED",
+            "urls": [
+              "https://www.sec.gov/Archives/edgar/data/1067983/000095012325005701/0000950123-25-005701-index.html"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "2025년 1분기에 버크셔가 공개한 COCA COLA CO의 보유 수량을 확인하고 싶어요.",
+          "intent": "HOLDING_FACT",
+          "period": "2025-03-31",
+          "cusip": "191216100"
+        },
+        "elapsed_seconds": 0.003985498000020016
+      },
+      {
+        "sample_id": "Q090",
+        "expected_evidence_ids": [
+          "H_1d44c4c6c631ac72"
+        ],
+        "question": "2025년 2분기에 버크셔가 공개한 COCA COLA CO의 보유 수량을 확인하고 싶어요.",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "HOLDING_FACT",
+        "response_intent": "HOLDING_FACT",
+        "guard_override": null,
+        "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_1d44c4c6c631ac72] 2025-06-30 COCA COLA CO (191216100, COM): 400,000,000주, 평가금액 28,300,000,000 USD.\n\n보고 기준일은 2025-06-30이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+        "evidence_ids": [
+          "H_1d44c4c6c631ac72"
+        ],
+        "sources": [
+          {
+            "evidence_id": "H_1d44c4c6c631ac72",
+            "evidence_type": "CALCULATED",
+            "urls": [
+              "https://www.sec.gov/Archives/edgar/data/1067983/000095012325008343/0000950123-25-008343-index.html"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "2025년 2분기에 버크셔가 공개한 COCA COLA CO의 보유 수량을 확인하고 싶어요.",
+          "intent": "HOLDING_FACT",
+          "period": "2025-06-30",
+          "cusip": "191216100"
+        },
+        "elapsed_seconds": 0.003746664999994209
+      },
+      {
+        "sample_id": "Q091",
+        "expected_evidence_ids": [
+          "C_e8947790f3bb1e53"
+        ],
+        "question": "COCA COLA CO은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": null,
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "COCA COLA CO은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0012203640000052474
+      },
+      {
+        "sample_id": "Q092",
+        "expected_evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "question": "공시만 읽고 버핏 개인이 COCA COLA CO을 선택한 진짜 동기를 알아낼 수 있나요?",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": "범위·미확인 동기 보호 규칙",
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "공시만 읽고 버핏 개인이 COCA COLA CO을 선택한 진짜 동기를 알아낼 수 있나요?",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0010776620000569892
+      },
+      {
+        "sample_id": "Q093",
+        "expected_evidence_ids": [
+          "H_76fd11a5d73f42b1"
+        ],
+        "question": "2025년 1분기에 버크셔가 공개한 CHEVRON CORP NEW의 보유 수량을 확인하고 싶어요.",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "HOLDING_FACT",
+        "response_intent": "HOLDING_FACT",
+        "guard_override": null,
+        "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_76fd11a5d73f42b1] 2025-03-31 CHEVRON CORP NEW (166764100, COM): 118,610,534주, 평가금액 19,842,356,232 USD.\n\n보고 기준일은 2025-03-31이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+        "evidence_ids": [
+          "H_76fd11a5d73f42b1"
+        ],
+        "sources": [
+          {
+            "evidence_id": "H_76fd11a5d73f42b1",
+            "evidence_type": "CALCULATED",
+            "urls": [
+              "https://www.sec.gov/Archives/edgar/data/1067983/000095012325005701/0000950123-25-005701-index.html"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "2025년 1분기에 버크셔가 공개한 CHEVRON CORP NEW의 보유 수량을 확인하고 싶어요.",
+          "intent": "HOLDING_FACT",
+          "period": "2025-03-31",
+          "cusip": "166764100"
+        },
+        "elapsed_seconds": 0.0031587779999426857
+      },
+      {
+        "sample_id": "Q094",
+        "expected_evidence_ids": [
+          "H_ce7dbee9e528c3ec"
+        ],
+        "question": "2025년 2분기에 버크셔가 공개한 CHEVRON CORP NEW의 보유 수량을 확인하고 싶어요.",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "HOLDING_FACT",
+        "response_intent": "HOLDING_FACT",
+        "guard_override": null,
+        "answer": "Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.\n\n[H_ce7dbee9e528c3ec] 2025-06-30 CHEVRON CORP NEW (166764100, COM): 122,064,792주, 평가금액 17,478,457,567 USD.\n\n보고 기준일은 2025-06-30이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.",
+        "evidence_ids": [
+          "H_ce7dbee9e528c3ec"
+        ],
+        "sources": [
+          {
+            "evidence_id": "H_ce7dbee9e528c3ec",
+            "evidence_type": "CALCULATED",
+            "urls": [
+              "https://www.sec.gov/Archives/edgar/data/1067983/000095012325008343/0000950123-25-008343-index.html"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "2025년 2분기에 버크셔가 공개한 CHEVRON CORP NEW의 보유 수량을 확인하고 싶어요.",
+          "intent": "HOLDING_FACT",
+          "period": "2025-06-30",
+          "cusip": "166764100"
+        },
+        "elapsed_seconds": 0.0033287769999787997
+      },
+      {
+        "sample_id": "Q095",
+        "expected_evidence_ids": [
+          "C_0bbc1ad9aa9346a3"
+        ],
+        "question": "CHEVRON CORP NEW은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": null,
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "CHEVRON CORP NEW은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.001192526999943766
+      },
+      {
+        "sample_id": "Q096",
+        "expected_evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "question": "공시만 읽고 버핏 개인이 CHEVRON CORP NEW을 선택한 진짜 동기를 알아낼 수 있나요?",
+        "model": "char_tfidf_svm",
+        "predicted_intent": "UNSUPPORTED",
+        "response_intent": "UNSUPPORTED",
+        "guard_override": "범위·미확인 동기 보호 규칙",
+        "answer": "확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.",
+        "evidence_ids": [
+          "SCOPE_13F"
+        ],
+        "sources": [
+          {
+            "evidence_id": "SCOPE_13F",
+            "evidence_type": "UNKNOWN",
+            "urls": [
+              "https://www.sec.gov/rules-regulations/staff-guidance/frequently-asked-questions-about-form-13f"
+            ],
+            "location": null
+          }
+        ],
+        "state": {
+          "last_question": "공시만 읽고 버핏 개인이 CHEVRON CORP NEW을 선택한 진짜 동기를 알아낼 수 있나요?",
+          "intent": "UNSUPPORTED",
+          "period": "2025-06-30"
+        },
+        "elapsed_seconds": 0.0010377680000601686
+      }
+    ]
+  }
+}

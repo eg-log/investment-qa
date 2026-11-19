@@ -1,0 +1,72 @@
+[
+  {
+    "model": "word_tfidf_logreg",
+    "sample_id": "Q038",
+    "question": "기관 투자자에게만 먼저 소식을 전하나요? 주주를 대하는 공개 원칙이 궁금합니다.",
+    "expected": "INVESTMENT_PRINCIPLE",
+    "predicted": "UNSUPPORTED",
+    "evidence_ids": [
+      "P2021_3"
+    ]
+  },
+  {
+    "model": "word_tfidf_logreg",
+    "sample_id": "Q040",
+    "question": "시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요.",
+    "expected": "INVESTMENT_PRINCIPLE",
+    "predicted": "UNSUPPORTED",
+    "evidence_ids": [
+      "P2022_3"
+    ]
+  },
+  {
+    "model": "word_tfidf_logreg",
+    "sample_id": "Q091",
+    "question": "COCA COLA CO은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+    "expected": "HOLDING_CHANGE",
+    "predicted": "UNSUPPORTED",
+    "evidence_ids": [
+      "C_e8947790f3bb1e53"
+    ]
+  },
+  {
+    "model": "word_tfidf_logreg",
+    "sample_id": "Q095",
+    "question": "CHEVRON CORP NEW은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+    "expected": "HOLDING_CHANGE",
+    "predicted": "UNSUPPORTED",
+    "evidence_ids": [
+      "C_0bbc1ad9aa9346a3"
+    ]
+  },
+  {
+    "model": "char_tfidf_svm",
+    "sample_id": "Q040",
+    "question": "시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요.",
+    "expected": "INVESTMENT_PRINCIPLE",
+    "predicted": "UNSUPPORTED",
+    "evidence_ids": [
+      "P2022_3"
+    ]
+  },
+  {
+    "model": "char_tfidf_svm",
+    "sample_id": "Q091",
+    "question": "COCA COLA CO은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+    "expected": "HOLDING_CHANGE",
+    "predicted": "UNSUPPORTED",
+    "evidence_ids": [
+      "C_e8947790f3bb1e53"
+    ]
+  },
+  {
+    "model": "char_tfidf_svm",
+    "sample_id": "Q095",
+    "question": "CHEVRON CORP NEW은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?",
+    "expected": "HOLDING_CHANGE",
+    "predicted": "UNSUPPORTED",
+    "evidence_ids": [
+      "C_0bbc1ad9aa9346a3"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+소스코드 및 실험 자료 검토 순서
+
+1. README.md: 문제 정의, 데이터, 전처리, 모델 비교, 서비스, 한계와 개선 계획
+2. project.ipynb: SEC 원본 입력부터 모델 학습·평가까지의 코드와 Colab 실행 출력
+3. data/README.md와 data/principles.json: 자료 출처, 원칙 요약, 검수 상태, 근거 분류
+4. models/training_log.json: 두 모델의 정규화 후보별 학습·검증 기록
+5. models/selection.json: 검증 기준 최종 모델 선정과 테스트 미사용 기록
+6. models/test_results.json과 reports/error_cases.json: 독립 시험 지표, 혼동행렬, 오류 문항
+7. docs/EVALUATION.md: 지표 계산 방식, 모델 선택 이유, 결과 해석
+8. app.py와 persona_runtime.py: 저장 모델 로드, 질문 유형 예측, 근거 조회, 답변 구성
+9. reports/service_smoke.json: 후속 질문을 포함한 Colab 질의응답 사례
+10. docs/DEPLOYMENT.md와 docs/VALIDATION.md: 실행 환경, 서비스 구성, 확인된 검증 범위
+
+저장소 루트에서 실행하는 기본 명령
+python -m pip install -r requirements.txt
+python scripts/check_package.py
+python scripts/smoke_test.py
+python app.py
+
+모델 가중치는 models/에 포함되어 있다. 전체 재학습 없이 저장 가중치 추론이 가능하다.
+현재 상시 공개 서비스의 URL과 외부 브라우저 예측 검증은 미확정이다.

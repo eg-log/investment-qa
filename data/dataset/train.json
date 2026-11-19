@@ -1,0 +1,871 @@
+[
+  {
+    "sample_id": "Q001",
+    "question": "버핏의 장기투자 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2020_1"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q002",
+    "question": "2020년 주주서한에서 기업 소유에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2020_1"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q003",
+    "question": "워런 버핏은 장기투자를 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2020_1"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q010",
+    "question": "버핏의 장기 보유 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2021_1"
+    ],
+    "source_id": [
+      "LETTER_2021"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q011",
+    "question": "2021년 주주서한에서 단기 매매에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2021_1"
+    ],
+    "source_id": [
+      "LETTER_2021"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q012",
+    "question": "워런 버핏은 장기 보유를 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2021_1"
+    ],
+    "source_id": [
+      "LETTER_2021"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q016",
+    "question": "버핏의 시간 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2022_1"
+    ],
+    "source_id": [
+      "LETTER_2022"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q017",
+    "question": "2022년 주주서한에서 장기 성과에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2022_1"
+    ],
+    "source_id": [
+      "LETTER_2022"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q018",
+    "question": "워런 버핏은 시간을 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2022_1"
+    ],
+    "source_id": [
+      "LETTER_2022"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q022",
+    "question": "버핏의 재투자 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:reinvestment",
+    "evidence_ids": [
+      "P2023_1"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q023",
+    "question": "2023년 주주서한에서 높은 수익률에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:reinvestment",
+    "evidence_ids": [
+      "P2023_1"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q024",
+    "question": "워런 버핏은 재투자를 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:reinvestment",
+    "evidence_ids": [
+      "P2023_1"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q028",
+    "question": "버핏의 영구 손실 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:permanent_loss",
+    "evidence_ids": [
+      "P2023_3"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q029",
+    "question": "2023년 주주서한에서 위험 관리에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:permanent_loss",
+    "evidence_ids": [
+      "P2023_3"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q030",
+    "question": "워런 버핏은 영구 손실을 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:permanent_loss",
+    "evidence_ids": [
+      "P2023_3"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q031",
+    "question": "버핏의 실수 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:mistake_correction",
+    "evidence_ids": [
+      "P2024_1"
+    ],
+    "source_id": [
+      "LETTER_2024"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q032",
+    "question": "2024년 주주서한에서 오류 수정에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:mistake_correction",
+    "evidence_ids": [
+      "P2024_1"
+    ],
+    "source_id": [
+      "LETTER_2024"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q033",
+    "question": "워런 버핏은 실수를 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:mistake_correction",
+    "evidence_ids": [
+      "P2024_1"
+    ],
+    "source_id": [
+      "LETTER_2024"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q034",
+    "question": "버핏의 현금 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2024_2"
+    ],
+    "source_id": [
+      "LETTER_2024"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q035",
+    "question": "2024년 주주서한에서 사업 소유에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2024_2"
+    ],
+    "source_id": [
+      "LETTER_2024"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q036",
+    "question": "워런 버핏은 현금을 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:ownership",
+    "evidence_ids": [
+      "P2024_2"
+    ],
+    "source_id": [
+      "LETTER_2024"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q041",
+    "question": "버크셔의 2025년 1분기 APPLE INC (CUSIP 037833100) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:037833100:COM:SH:",
+    "evidence_ids": [
+      "H_e33bce7a484ecb34"
+    ],
+    "source_id": [
+      "0000950123-25-005701"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q042",
+    "question": "버크셔의 2025년 2분기 APPLE INC (CUSIP 037833100) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:037833100:COM:SH:",
+    "evidence_ids": [
+      "H_2df6adcca523c7fb"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q043",
+    "question": "2025년 1분기와 2분기 사이 APPLE INC (CUSIP 037833100) 보유량이 어떻게 달라졌나요?",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:037833100:COM:SH:",
+    "evidence_ids": [
+      "C_ca8f2c2a16674365"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q044",
+    "question": "분기 사이 APPLE INC (CUSIP 037833100) 지분 수량의 증감과 변화 유형을 알려주세요.",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:037833100:COM:SH:",
+    "evidence_ids": [
+      "C_ca8f2c2a16674365"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q045",
+    "question": "워런 버핏이 APPLE INC (CUSIP 037833100)을 매수한 구체적인 이유가 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "security:037833100:COM:SH:",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q046",
+    "question": "버크셔의 2025년 1분기 AMERICAN EXPRESS CO (CUSIP 025816109) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:025816109:COM:SH:",
+    "evidence_ids": [
+      "H_40a9f8db5c368580"
+    ],
+    "source_id": [
+      "0000950123-25-005701"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q047",
+    "question": "버크셔의 2025년 2분기 AMERICAN EXPRESS CO (CUSIP 025816109) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:025816109:COM:SH:",
+    "evidence_ids": [
+      "H_505eb58b6a3f91d8"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q048",
+    "question": "2025년 1분기와 2분기 사이 AMERICAN EXPRESS CO (CUSIP 025816109) 보유량이 어떻게 달라졌나요?",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:025816109:COM:SH:",
+    "evidence_ids": [
+      "C_5b5d0d49fa34a58a"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q049",
+    "question": "분기 사이 AMERICAN EXPRESS CO (CUSIP 025816109) 지분 수량의 증감과 변화 유형을 알려주세요.",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:025816109:COM:SH:",
+    "evidence_ids": [
+      "C_5b5d0d49fa34a58a"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q050",
+    "question": "워런 버핏이 AMERICAN EXPRESS CO (CUSIP 025816109)을 매수한 구체적인 이유가 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "security:025816109:COM:SH:",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q056",
+    "question": "버크셔의 2025년 1분기 NUCOR CORP (CUSIP 670346105) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:670346105:COM:SH:",
+    "evidence_ids": [
+      "H_13c3e0f13687531c"
+    ],
+    "source_id": [
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q057",
+    "question": "버크셔의 2025년 2분기 NUCOR CORP (CUSIP 670346105) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:670346105:COM:SH:",
+    "evidence_ids": [
+      "H_ab4bdfa4aaf1f32e"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q058",
+    "question": "2025년 1분기와 2분기 사이 NUCOR CORP (CUSIP 670346105) 보유량이 어떻게 달라졌나요?",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:670346105:COM:SH:",
+    "evidence_ids": [
+      "C_2f38db0485f838e1"
+    ],
+    "source_id": [
+      "0000950123-25-008343",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q059",
+    "question": "분기 사이 NUCOR CORP (CUSIP 670346105) 지분 수량의 증감과 변화 유형을 알려주세요.",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:670346105:COM:SH:",
+    "evidence_ids": [
+      "C_2f38db0485f838e1"
+    ],
+    "source_id": [
+      "0000950123-25-008343",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q060",
+    "question": "워런 버핏이 NUCOR CORP (CUSIP 670346105)을 매수한 구체적인 이유가 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "security:670346105:COM:SH:",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q061",
+    "question": "버크셔의 2025년 1분기 LENNAR CORP (CUSIP 526057104) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:526057104:CL A:SH:",
+    "evidence_ids": [
+      "H_eeaca83bae635f49"
+    ],
+    "source_id": [
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q062",
+    "question": "버크셔의 2025년 2분기 LENNAR CORP (CUSIP 526057104) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:526057104:CL A:SH:",
+    "evidence_ids": [
+      "H_ce0b995e42d55f01"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q063",
+    "question": "2025년 1분기와 2분기 사이 LENNAR CORP (CUSIP 526057104) 보유량이 어떻게 달라졌나요?",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:526057104:CL A:SH:",
+    "evidence_ids": [
+      "C_e8a8c89d9a5d29cc"
+    ],
+    "source_id": [
+      "0000950123-25-008343",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q064",
+    "question": "분기 사이 LENNAR CORP (CUSIP 526057104) 지분 수량의 증감과 변화 유형을 알려주세요.",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:526057104:CL A:SH:",
+    "evidence_ids": [
+      "C_e8a8c89d9a5d29cc"
+    ],
+    "source_id": [
+      "0000950123-25-008343",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q065",
+    "question": "워런 버핏이 LENNAR CORP (CUSIP 526057104)을 매수한 구체적인 이유가 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "security:526057104:CL A:SH:",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q071",
+    "question": "버크셔의 2025년 1분기 LENNAR CORP (CUSIP 526057302) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:526057302:CL B:SH:",
+    "evidence_ids": [
+      "H_c53f9236ff983a82"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q072",
+    "question": "버크셔의 2025년 2분기 LENNAR CORP (CUSIP 526057302) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:526057302:CL B:SH:",
+    "evidence_ids": [
+      "H_779df8a0f89480f3"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q073",
+    "question": "2025년 1분기와 2분기 사이 LENNAR CORP (CUSIP 526057302) 보유량이 어떻게 달라졌나요?",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:526057302:CL B:SH:",
+    "evidence_ids": [
+      "C_1d6f3faa17d5dc88"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008343",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q074",
+    "question": "분기 사이 LENNAR CORP (CUSIP 526057302) 지분 수량의 증감과 변화 유형을 알려주세요.",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:526057302:CL B:SH:",
+    "evidence_ids": [
+      "C_1d6f3faa17d5dc88"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008343",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q075",
+    "question": "워런 버핏이 LENNAR CORP (CUSIP 526057302)을 매수한 구체적인 이유가 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "security:526057302:CL B:SH:",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q076",
+    "question": "버크셔의 2025년 1분기 UNITEDHEALTH GROUP INC (CUSIP 91324P102) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:91324P102:COM:SH:",
+    "evidence_ids": [
+      "FILING_2025-03-31"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q077",
+    "question": "버크셔의 2025년 2분기 UNITEDHEALTH GROUP INC (CUSIP 91324P102) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:91324P102:COM:SH:",
+    "evidence_ids": [
+      "H_9b363aea1815878b"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q078",
+    "question": "2025년 1분기와 2분기 사이 UNITEDHEALTH GROUP INC (CUSIP 91324P102) 보유량이 어떻게 달라졌나요?",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:91324P102:COM:SH:",
+    "evidence_ids": [
+      "C_aa25e450f84e1903"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q079",
+    "question": "분기 사이 UNITEDHEALTH GROUP INC (CUSIP 91324P102) 지분 수량의 증감과 변화 유형을 알려주세요.",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:91324P102:COM:SH:",
+    "evidence_ids": [
+      "C_aa25e450f84e1903"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q080",
+    "question": "워런 버핏이 UNITEDHEALTH GROUP INC (CUSIP 91324P102)을 매수한 구체적인 이유가 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "security:91324P102:COM:SH:",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q081",
+    "question": "내일 주가가 얼마가 될지 예측해 주세요.",
+    "target_label": "UNSUPPORTED",
+    "group_id": "out_of_scope:0",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "unsupported",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q082",
+    "question": "버핏의 실제 개인 계좌를 보여주세요.",
+    "target_label": "UNSUPPORTED",
+    "group_id": "out_of_scope:1",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "unsupported",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q085",
+    "question": "현재 비공개 투자 계획을 알려주세요.",
+    "target_label": "UNSUPPORTED",
+    "group_id": "out_of_scope:4",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "unsupported",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q086",
+    "question": "2026년 최신 보유 종목을 알려주세요.",
+    "target_label": "UNSUPPORTED",
+    "group_id": "out_of_scope:5",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "unsupported",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q087",
+    "question": "13F에 없는 한국 주식의 개인 매수 이유는 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "out_of_scope:6",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "unsupported",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q088",
+    "question": "다음 달 목표 주가를 확정해 주세요.",
+    "target_label": "UNSUPPORTED",
+    "group_id": "out_of_scope:7",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "unsupported",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  }
+]

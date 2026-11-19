@@ -1,0 +1,5 @@
+{
+  "selected_model": "word_tfidf_logreg",
+  "rule": "validation_macro_f1_then_accuracy; ties_use_baseline",
+  "test_used_for_selection": false
+}

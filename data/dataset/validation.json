@@ -1,0 +1,229 @@
+[
+  {
+    "sample_id": "Q004",
+    "question": "버핏의 경쟁력 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2020_2"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q005",
+    "question": "2020년 주주서한에서 경영자에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2020_2"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q006",
+    "question": "워런 버핏은 경쟁력을 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2020_2"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q013",
+    "question": "버핏의 경제적 우위 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2021_2"
+    ],
+    "source_id": [
+      "LETTER_2021"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q014",
+    "question": "2021년 주주서한에서 좋은 경영자에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2021_2"
+    ],
+    "source_id": [
+      "LETTER_2021"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q015",
+    "question": "워런 버핏은 경제적 우위를 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2021_2"
+    ],
+    "source_id": [
+      "LETTER_2021"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q025",
+    "question": "버핏의 경영진 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2023_2"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q026",
+    "question": "2023년 주주서한에서 신뢰에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2023_2"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q027",
+    "question": "워런 버핏은 경영진을 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:quality_management",
+    "evidence_ids": [
+      "P2023_2"
+    ],
+    "source_id": [
+      "LETTER_2023"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q051",
+    "question": "버크셔의 2025년 1분기 BANK AMER CORP (CUSIP 060505104) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:060505104:COM:SH:",
+    "evidence_ids": [
+      "H_7eeb04438ef6e60f"
+    ],
+    "source_id": [
+      "0000950123-25-005701"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q052",
+    "question": "버크셔의 2025년 2분기 BANK AMER CORP (CUSIP 060505104) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:060505104:COM:SH:",
+    "evidence_ids": [
+      "H_597435020d2331ac"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q053",
+    "question": "2025년 1분기와 2분기 사이 BANK AMER CORP (CUSIP 060505104) 보유량이 어떻게 달라졌나요?",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:060505104:COM:SH:",
+    "evidence_ids": [
+      "C_20bccb3e5eca5a94"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q054",
+    "question": "분기 사이 BANK AMER CORP (CUSIP 060505104) 지분 수량의 증감과 변화 유형을 알려주세요.",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:060505104:COM:SH:",
+    "evidence_ids": [
+      "C_20bccb3e5eca5a94"
+    ],
+    "source_id": [
+      "0000950123-25-005701",
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q055",
+    "question": "워런 버핏이 BANK AMER CORP (CUSIP 060505104)을 매수한 구체적인 이유가 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "security:060505104:COM:SH:",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q083",
+    "question": "지금 이 주식을 사면 수익을 보장할 수 있나요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "out_of_scope:2",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "unsupported",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  }
+]

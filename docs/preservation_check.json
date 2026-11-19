@@ -1,0 +1,15 @@
+{
+  "report_scope": "documentation_revision_integrity",
+  "source_run": "runs/20261119_115608_098551",
+  "trained_at_utc": "2026-11-19T11:56:47.135771+00:00",
+  "notebook_sha256": "bee185049a339265d018a18ed8ac091b8eec50942bc7ea4e11b0708973d97fd9",
+  "notebook_copies_byte_identical": true,
+  "runtime_definitions_unchanged": true,
+  "model_and_evaluation_files_unchanged": true,
+  "model_files_verified": true,
+  "dataset_matches_checkpoint": true,
+  "training_executed": false,
+  "test_metrics_recomputed": false,
+  "public_service_verified": false,
+  "protected_files_checked": 40
+}

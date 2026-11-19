@@ -1,0 +1,368 @@
+[
+  {
+    "principle_id": "P2020_1",
+    "principle_text": "상장 주식도 기업의 일부 소유로 보고 장기적인 사업 성과를 살핍니다.",
+    "investment_criteria": [
+      "LONG_TERM"
+    ],
+    "condition": "시장성 주식의 소유 관점을 설명할 때",
+    "document_title": "2020 Shareholder Letter",
+    "report_year": 2020,
+    "published_year": 2021,
+    "source_url": "https://www.berkshirehathaway.com/letters/2020ltr.pdf",
+    "source_location": "PDF 2쪽, 보유 주식을 사업의 집합으로 설명하는 문단",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "장기투자",
+      "기업 소유",
+      "사업 성과"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2020",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2020_2",
+    "principle_text": "지속되는 경쟁력과 경영자의 역량·품성, 지불 가격을 함께 살펴 자본을 배분합니다.",
+    "investment_criteria": [
+      "QUALITY",
+      "MANAGEMENT",
+      "VALUE"
+    ],
+    "condition": "기업 지분 또는 기업 전체 인수의 판단 기준",
+    "document_title": "2020 Shareholder Letter",
+    "report_year": 2020,
+    "published_year": 2021,
+    "source_url": "https://www.berkshirehathaway.com/letters/2020ltr.pdf",
+    "source_location": "PDF 4쪽, 자본 배분 기준을 열거한 문단",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "경쟁력",
+      "경영자",
+      "기업 선택"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2020",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2020_3",
+    "principle_text": "자사주 매입은 주당 내재가치를 높이고 기회와 위험에 대응할 여유 자금을 남기는 가격에서 검토합니다.",
+    "investment_criteria": [
+      "VALUE",
+      "CAPITAL_ALLOCATION"
+    ],
+    "condition": "버크셔 자체 주식의 환매 판단",
+    "document_title": "2020 Shareholder Letter",
+    "report_year": 2020,
+    "published_year": 2021,
+    "source_url": "https://www.berkshirehathaway.com/letters/2020ltr.pdf",
+    "source_location": "PDF 5쪽, 버크셔 자사주 매입 기준 문단",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "자사주",
+      "내재가치",
+      "여유 자금"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2020",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2021_1",
+    "principle_text": "주식을 단기 시장 움직임을 이용하는 수단으로 보기보다 장기 사업 실적에 대한 기대를 바탕으로 소유합니다.",
+    "investment_criteria": [
+      "LONG_TERM"
+    ],
+    "condition": "주식 보유 목적과 단기 매매의 차이를 설명할 때",
+    "document_title": "2021 Shareholder Letter",
+    "report_year": 2021,
+    "published_year": 2022,
+    "source_url": "https://www.berkshirehathaway.com/letters/2021ltr.pdf",
+    "source_location": "PDF 2쪽, What You Own",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "장기 보유",
+      "단기 매매",
+      "사업 실적"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2021",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2021_2",
+    "principle_text": "지속적인 경제적 우위와 뛰어난 경영자를 갖춘 사업에 의미 있는 규모로 투자하려 합니다.",
+    "investment_criteria": [
+      "QUALITY",
+      "MANAGEMENT"
+    ],
+    "condition": "보유 형태와 무관한 사업 선정 목표",
+    "document_title": "2021 Shareholder Letter",
+    "report_year": 2021,
+    "published_year": 2022,
+    "source_url": "https://www.berkshirehathaway.com/letters/2021ltr.pdf",
+    "source_location": "PDF 2쪽, What You Own의 사업 선정 문단",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "경제적 우위",
+      "좋은 경영자",
+      "사업 선정"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2021",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2022_1",
+    "principle_text": "오래 보유한 소수의 성공적인 사업이 시간이 흐르며 전체 투자 성과에 크게 기여할 수 있다고 설명합니다.",
+    "investment_criteria": [
+      "LONG_TERM"
+    ],
+    "condition": "코카콜라·아메리칸 익스프레스 보유 사례에서 설명한 장기 효과",
+    "document_title": "2022 Shareholder Letter",
+    "report_year": 2022,
+    "published_year": 2023,
+    "source_url": "https://www.berkshirehathaway.com/letters/2022ltr.pdf",
+    "source_location": "PDF 3~4쪽, The Secret Sauce",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "시간",
+      "장기 성과",
+      "복리"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2022",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2022_2",
+    "principle_text": "가치를 높이는 가격의 자사주 매입은 잔여 주주의 몫을 키우지만, 과도한 가격의 환매는 잔여 주주에게 손해가 될 수 있습니다.",
+    "investment_criteria": [
+      "VALUE",
+      "CAPITAL_ALLOCATION"
+    ],
+    "condition": "자사주 매입 가격의 적정성을 평가할 때",
+    "document_title": "2022 Shareholder Letter",
+    "report_year": 2022,
+    "published_year": 2023,
+    "source_url": "https://www.berkshirehathaway.com/letters/2022ltr.pdf",
+    "source_location": "PDF 5쪽, 주식 수 감소와 가치 증대의 조건",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "환매 가격",
+      "주주 가치",
+      "자사주 매입"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2022",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2023_1",
+    "principle_text": "추가 자본을 미래에 높은 수익률로 운용할 수 있는 지속적인 경제성을 가진 사업을 선호합니다.",
+    "investment_criteria": [
+      "QUALITY",
+      "CAPITAL_ALLOCATION"
+    ],
+    "condition": "사업의 재투자 능력과 장기 경제성을 살필 때",
+    "document_title": "2023 Shareholder Letter",
+    "report_year": 2023,
+    "published_year": 2024,
+    "source_url": "https://www.berkshirehathaway.com/letters/2023ltr.pdf",
+    "source_location": "PDF 4쪽, What We Do",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "재투자",
+      "높은 수익률",
+      "지속 경제성"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2023",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2023_2",
+    "principle_text": "능력 있고 신뢰할 수 있는 경영자를 원하지만 사람의 신뢰성을 판단하는 일도 어렵다는 점을 인정합니다.",
+    "investment_criteria": [
+      "MANAGEMENT"
+    ],
+    "condition": "경영진의 역량과 신뢰를 판단할 때",
+    "document_title": "2023 Shareholder Letter",
+    "report_year": 2023,
+    "published_year": 2024,
+    "source_url": "https://www.berkshirehathaway.com/letters/2023ltr.pdf",
+    "source_location": "PDF 4~5쪽, What We Do의 경영자 신뢰 문단",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "경영진",
+      "신뢰",
+      "역량"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2023",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2023_3",
+    "principle_text": "일시적인 시세 하락과 구분해 자본의 영구적 손실을 피하고 금융 혼란에 대비할 재무 여력을 유지합니다.",
+    "investment_criteria": [
+      "RISK_MANAGEMENT"
+    ],
+    "condition": "위험 관리와 위기 대비 원칙",
+    "document_title": "2023 Shareholder Letter",
+    "report_year": 2023,
+    "published_year": 2024,
+    "source_url": "https://www.berkshirehathaway.com/letters/2023ltr.pdf",
+    "source_location": "PDF 6~7쪽, Our Not-So-Secret Weapon",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "영구 손실",
+      "위험 관리",
+      "금융 위기"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2023",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2024_1",
+    "principle_text": "사업의 경제성과 경영자 판단에서 실수할 수 있음을 인정하고, 잘못을 바로잡는 일을 지연하지 않으려 합니다.",
+    "investment_criteria": [
+      "CAPITAL_ALLOCATION",
+      "MANAGEMENT"
+    ],
+    "condition": "잘못된 인수·인사 판단을 돌아볼 때",
+    "document_title": "2024 Shareholder Letter",
+    "report_year": 2024,
+    "published_year": 2025,
+    "source_url": "https://www.berkshirehathaway.com/letters/2024ltr.pdf",
+    "source_location": "PDF 1쪽, Mistakes 부분",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "실수",
+      "오류 수정",
+      "판단 잘못"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2024",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2024_2",
+    "principle_text": "현금성 자산보다 좋은 사업의 전체 또는 일부를 소유하는 것을 장기적인 자본 배분의 중심에 둡니다.",
+    "investment_criteria": [
+      "CAPITAL_ALLOCATION",
+      "LONG_TERM"
+    ],
+    "condition": "현금과 사업 소유에 대한 장기 선호를 설명할 때",
+    "document_title": "2024 Shareholder Letter",
+    "report_year": 2024,
+    "published_year": 2025,
+    "source_url": "https://www.berkshirehathaway.com/letters/2024ltr.pdf",
+    "source_location": "PDF 7쪽, 현금성 자산과 주식 소유를 비교한 문단",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "현금",
+      "사업 소유",
+      "자본 배분"
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2024",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2021_3",
+    "principle_text": "주주를 동등하게 대하고 특정 분석가나 대형 기관에게만 정보를 설명하지 않으며, 중요한 소식을 주주들이 숙고할 수 있도록 전달하려 합니다.",
+    "investment_criteria": [
+      "MANAGEMENT"
+    ],
+    "condition": "주주와의 정보 전달 공정성을 설명할 때",
+    "document_title": "2021 Shareholder Letter",
+    "report_year": 2021,
+    "published_year": 2022,
+    "source_url": "https://www.berkshirehathaway.com/letters/2021ltr.pdf",
+    "source_location": "PDF 2쪽, 모든 주주를 동등하게 대하는 보고 방침 문단",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "주주 정보 공정성",
+      "동등 대우"
+    ],
+    "final_test_family": "shareholder_information_fairness",
+    "evaluation_questions": [
+      "버핏의 투자 원칙 중 주주에게 정보를 공정하게 전하는 방침을 설명해 주세요.",
+      "기관 투자자에게만 먼저 소식을 전하나요? 주주를 대하는 공개 원칙이 궁금합니다."
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2021",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  },
+  {
+    "principle_id": "P2022_3",
+    "principle_text": "시장성 증권의 가격은 비합리적으로 높거나 낮아질 수 있으므로 시장 가격과 사업의 경제적 가치를 같은 것으로 보지 않습니다.",
+    "investment_criteria": [
+      "VALUE"
+    ],
+    "condition": "시장 가격이 효율적으로 가치를 반영하는지 판단할 때",
+    "document_title": "2022 Shareholder Letter",
+    "report_year": 2022,
+    "published_year": 2023,
+    "source_url": "https://www.berkshirehathaway.com/letters/2022ltr.pdf",
+    "source_location": "PDF 3쪽, What We Do의 비합리적 증권 가격 문단",
+    "evidence_type": "STATED",
+    "review_status": "AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW",
+    "question_topics": [
+      "시장 가격과 가치",
+      "시장 효율성"
+    ],
+    "final_test_family": "market_price_efficiency",
+    "evaluation_questions": [
+      "버핏은 시장 가격이 항상 가치를 반영한다는 투자 원칙에 동의하나요?",
+      "시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요."
+    ],
+    "record_type": "PRINCIPLE_RECORD",
+    "source_id": "LETTER_2022",
+    "author": "Warren E. Buffett",
+    "is_paraphrase": true,
+    "direct_trade_link": null
+  }
+]

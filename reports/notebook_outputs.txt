@@ -1,0 +1,360 @@
+패키지 준비: 이미 설치됨
+
+직접 수집한 SEC 13F 원본 ZIP 두 개를 선택합니다.
+
+<IPython.core.display.HTML object>
+Saving 01jun2025-31aug2025_form13f.zip to 01jun2025-31aug2025_form13f.zip
+Saving 01mar2025-31may2025_form13f.zip to 01mar2025-31may2025_form13f.zip
+실행 모드: train
+모델 출처: new_training_run
+가중치 저장/로드 경로: /content/runs/20261119_115608_098551/models
+학습 보고서(읽기): /content/runs/20261119_115608_098551/reports
+이번 시연 로그(별도 저장): /content/runs/20261119_115608_098551/reports
+원본 ZIP: ['01jun2025-31aug2025_form13f.zip', '01mar2025-31may2025_form13f.zip']
+
+실제 버전: {'Python': '3.13.18', 'pandas': '2.2.3', 'numpy': '2.4.6', 'scikit-learn': '1.6.1', 'joblib': '1.6.0'}
+
+                           archive  submission_rows  infotable_rows  \
+0  01jun2025-31aug2025_form13f.zip            10799         3360306   
+1  01mar2025-31may2025_form13f.zip            10765         3440002   
+
+   selected_rows  
+0            118  
+1            110  
+원본 INFOTABLE 컬럼: ['ACCESSION_NUMBER', 'INFOTABLE_SK', 'NAMEOFISSUER', 'TITLEOFCLASS', 'CUSIP', 'FIGI', 'VALUE', 'SSHPRNAMT', 'SSHPRNAMTTYPE', 'PUTCALL', 'INVESTMENTDISCRETION', 'OTHERMANAGER', 'VOTING_AUTH_SOLE', 'VOTING_AUTH_SHARED', 'VOTING_AUTH_NONE']
+
+          cik      accession_number  period_end filing_date submission_type  \
+0  0001067983  0000950123-25-005701  2025-03-31  2025-05-15          13F-HR   
+1  0001067983  0000950123-25-008361  2025-03-31  2025-08-14        13F-HR/A   
+2  0001067983  0000950123-25-008343  2025-06-30  2025-08-14          13F-HR   
+
+         reporting_entity amendment_type  
+0  Berkshire Hathaway Inc                 
+1  Berkshire Hathaway Inc   NEW HOLDINGS  
+2  Berkshire Hathaway Inc                 
+   period_end             accession      type amendment_type  before_rows  \
+0  2025-03-31  0000950123-25-005701    13F-HR                           0   
+1  2025-03-31  0000950123-25-008361  13F-HR/A   NEW HOLDINGS          110   
+2  2025-06-30  0000950123-25-008343    13F-HR                           0   
+
+   incoming_rows  after_rows                      policy  
+0            110         110                    ORIGINAL  
+1              4         114  APPEND_NEW_PUBLIC_HOLDINGS  
+2            114         114                    ORIGINAL  
+                               처리  실제 건수
+0  duplicate_primary_keys_removed      0
+1       normalized_fields_changed      0
+2          blank_optional_to_null    456
+3           numeric_fields_parsed   1140
+처리 전 원본: {'ACCESSION_NUMBER': '0000950123-25-008361', 'INFOTABLE_SK': '118287324', 'NAMEOFISSUER': 'D R HORTON INC', 'TITLEOFCLASS': 'COM', 'CUSIP': '23331A109', 'FIGI': '', 'VALUE': '192267725', 'SSHPRNAMT': '1512371', 'SSHPRNAMTTYPE': 'SH', 'PUTCALL': '', 'INVESTMENTDISCRETION': 'DFND', 'OTHERMANAGER': '4,11', 'VOTING_AUTH_SOLE': '1512371', 'VOTING_AUTH_SHARED': '0', 'VOTING_AUTH_NONE': '0'}
+처리 후 정형화: {'row_id': '0000950123-25-008361:118287324', 'source_id': '0000950123-25-008361', 'reporting_entity': 'Berkshire Hathaway Inc', 'cik': '0001067983', 'accession_number': '0000950123-25-008361', 'period_end': '2025-03-31', 'filing_date': '2025-08-14', 'issuer_name': 'D R HORTON INC', 'title_of_class': 'COM', 'cusip': '23331A109', 'figi': None, 'shares': 1512371, 'amount_type': 'SH', 'market_value': 192267725, 'value_unit': 'USD', 'put_call': None, 'investment_discretion': 'DFND', 'other_manager': '4,11', 'evidence_type': 'OBSERVED', 'source_url': 'https://www.sec.gov/Archives/edgar/data/1067983/000095012325008361/0000950123-25-008361-index.html', 'voting_auth_sole': 1512371, 'voting_auth_shared': 0, 'voting_auth_none': 0}
+원본 추출 → 수정 공시 적용 → 증권 합산: 228 228 80
+
+                     issuer_name      cusip  before_shares  after_shares  \
+0                  ALLY FINL INC  02005N100       29000000      29000000   
+1                 AMAZON COM INC  023135106       10000000      10000000   
+2            AMERICAN EXPRESS CO  025816109      151610700     151610700   
+3                      APPLE INC  037833100      300000000     280000000   
+4       ATLANTA BRAVES HLDGS INC  047726302         223645        223645   
+5                 BANK AMER CORP  060505104      631573531     605267375   
+6          CAPITAL ONE FINL CORP  14040H105        7150000       7150000   
+7   CHARTER COMMUNICATIONS INC N  16119P108        1984259       1060882   
+8               CHEVRON CORP NEW  166764100      118610534     122064792   
+9                   COCA COLA CO  191216100      400000000     400000000   
+10      CONSTELLATION BRANDS INC  21036P108       12009000      13400000   
+11                D R HORTON INC  23331A109        1512371       1485350   
+12                    DAVITA INC  23918K108       35142479      33796541   
+13                  DIAGEO P L C  25243Q205         227750        227750   
+14             DOMINOS PIZZA INC  25754A201        2620613       2633868   
+15                HEICO CORP NEW  422806208        1162088       1294612   
+16      JEFFERIES FINL GROUP INC  47233W109         433558        433558   
+17                KRAFT HEINZ CO  500754106      325634818     325634818   
+18                     KROGER CO  501044101       50000000      50000000   
+19      LAMAR ADVERTISING CO NEW  512816109              0       1169507   
+20                   LENNAR CORP  526057104        1929972       7048993   
+21                   LENNAR CORP  526057302         152774        180930   
+22        LIBERTY MEDIA CORP DEL  531229722       10917661      10917661   
+23        LIBERTY MEDIA CORP DEL  531229748        4986588       4986588   
+24        LIBERTY MEDIA CORP DEL  531229854        3512000       3018555   
+25            LOUISIANA PAC CORP  546347105        5664793       5664793   
+26                MASTERCARD INC  57636Q104        3986648       3986648   
+27                   MOODYS CORP  615369105       24669778      24669778   
+28                       NVR INC  62944T105          11112         11112   
+29                    NUCOR CORP  670346105        5756510       6614112   
+30          OCCIDENTAL PETE CORP  674599105      264941431     264941431   
+31                     POOL CORP  73278L105        1464000       3458885   
+32        SIRIUS XM HOLDINGS INC  829933100      119776692     119776692   
+33               T-MOBILE US INC  872590104        3883145             0   
+34        UNITEDHEALTH GROUP INC  91324P102              0       5039564   
+35                  VERISIGN INC  92343E102       13289880      13289880   
+36                      VISA INC  92826C839        8297460       8297460   
+37                  ALLEGION PLC  G0176J109              0        780133   
+38                       AON PLC  G0403H108        4100000       4100000   
+39     LIBERTY LATIN AMERICA LTD  G9001E102        2630792       2630792   
+40     LIBERTY LATIN AMERICA LTD  G9001E128        1284020       1284020   
+41                 CHUBB LIMITED  H1467J104       27033784      27033784   
+
+          change_label  
+0   POSITION_UNCHANGED  
+1   POSITION_UNCHANGED  
+2   POSITION_UNCHANGED  
+3   POSITION_DECREASED  
+4   POSITION_UNCHANGED  
+5   POSITION_DECREASED  
+6   POSITION_UNCHANGED  
+7   POSITION_DECREASED  
+8   POSITION_INCREASED  
+9   POSITION_UNCHANGED  
+10  POSITION_INCREASED  
+11  POSITION_DECREASED  
+12  POSITION_DECREASED  
+13  POSITION_UNCHANGED  
+14  POSITION_INCREASED  
+15  POSITION_INCREASED  
+16  POSITION_UNCHANGED  
+17  POSITION_UNCHANGED  
+18  POSITION_UNCHANGED  
+19        NEW_POSITION  
+20  POSITION_INCREASED  
+21  POSITION_INCREASED  
+22  POSITION_UNCHANGED  
+23  POSITION_UNCHANGED  
+24  POSITION_DECREASED  
+25  POSITION_UNCHANGED  
+26  POSITION_UNCHANGED  
+27  POSITION_UNCHANGED  
+28  POSITION_UNCHANGED  
+29  POSITION_INCREASED  
+30  POSITION_UNCHANGED  
+31  POSITION_INCREASED  
+32  POSITION_UNCHANGED  
+33     POSITION_EXITED  
+34        NEW_POSITION  
+35  POSITION_UNCHANGED  
+36  POSITION_UNCHANGED  
+37        NEW_POSITION  
+38  POSITION_UNCHANGED  
+39  POSITION_UNCHANGED  
+40  POSITION_UNCHANGED  
+41  POSITION_UNCHANGED  
+변화 분포: {'POSITION_UNCHANGED': 24, 'POSITION_DECREASED': 6, 'POSITION_INCREASED': 8, 'NEW_POSITION': 3, 'POSITION_EXITED': 1}
+주의: 기업 행동 검증은 미완료이며 개인의 매매 동기를 알 수 없습니다.
+
+   principle_id                                     principle_text  \
+0       P2020_1             상장 주식도 기업의 일부 소유로 보고 장기적인 사업 성과를 살핍니다.   
+1       P2020_2      지속되는 경쟁력과 경영자의 역량·품성, 지불 가격을 함께 살펴 자본을 배분합니다.   
+2       P2020_3  자사주 매입은 주당 내재가치를 높이고 기회와 위험에 대응할 여유 자금을 남기는 가격...   
+3       P2021_1  주식을 단기 시장 움직임을 이용하는 수단으로 보기보다 장기 사업 실적에 대한 기대를...   
+4       P2021_2   지속적인 경제적 우위와 뛰어난 경영자를 갖춘 사업에 의미 있는 규모로 투자하려 합니다.   
+5       P2022_1  오래 보유한 소수의 성공적인 사업이 시간이 흐르며 전체 투자 성과에 크게 기여할 수...   
+6       P2022_2  가치를 높이는 가격의 자사주 매입은 잔여 주주의 몫을 키우지만, 과도한 가격의 환매...   
+7       P2023_1  추가 자본을 미래에 높은 수익률로 운용할 수 있는 지속적인 경제성을 가진 사업을 선...   
+8       P2023_2  능력 있고 신뢰할 수 있는 경영자를 원하지만 사람의 신뢰성을 판단하는 일도 어렵다는...   
+9       P2023_3  일시적인 시세 하락과 구분해 자본의 영구적 손실을 피하고 금융 혼란에 대비할 재무 ...   
+10      P2024_1  사업의 경제성과 경영자 판단에서 실수할 수 있음을 인정하고, 잘못을 바로잡는 일을 ...   
+11      P2024_2  현금성 자산보다 좋은 사업의 전체 또는 일부를 소유하는 것을 장기적인 자본 배분의 ...   
+12      P2021_3  주주를 동등하게 대하고 특정 분석가나 대형 기관에게만 정보를 설명하지 않으며, 중요...   
+13      P2022_3  시장성 증권의 가격은 비합리적으로 높거나 낮아질 수 있으므로 시장 가격과 사업의 경...   
+
+                 investment_criteria  \
+0                        [LONG_TERM]   
+1       [QUALITY, MANAGEMENT, VALUE]   
+2        [VALUE, CAPITAL_ALLOCATION]   
+3                        [LONG_TERM]   
+4              [QUALITY, MANAGEMENT]   
+5                        [LONG_TERM]   
+6        [VALUE, CAPITAL_ALLOCATION]   
+7      [QUALITY, CAPITAL_ALLOCATION]   
+8                       [MANAGEMENT]   
+9                  [RISK_MANAGEMENT]   
+10  [CAPITAL_ALLOCATION, MANAGEMENT]   
+11   [CAPITAL_ALLOCATION, LONG_TERM]   
+12                      [MANAGEMENT]   
+13                           [VALUE]   
+
+                                           source_url  \
+0   https://www.berkshirehathaway.com/letters/2020...   
+1   https://www.berkshirehathaway.com/letters/2020...   
+2   https://www.berkshirehathaway.com/letters/2020...   
+3   https://www.berkshirehathaway.com/letters/2021...   
+4   https://www.berkshirehathaway.com/letters/2021...   
+5   https://www.berkshirehathaway.com/letters/2022...   
+6   https://www.berkshirehathaway.com/letters/2022...   
+7   https://www.berkshirehathaway.com/letters/2023...   
+8   https://www.berkshirehathaway.com/letters/2023...   
+9   https://www.berkshirehathaway.com/letters/2023...   
+10  https://www.berkshirehathaway.com/letters/2024...   
+11  https://www.berkshirehathaway.com/letters/2024...   
+12  https://www.berkshirehathaway.com/letters/2021...   
+13  https://www.berkshirehathaway.com/letters/2022...   
+
+                       source_location  \
+0      PDF 2쪽, 보유 주식을 사업의 집합으로 설명하는 문단   
+1             PDF 4쪽, 자본 배분 기준을 열거한 문단   
+2             PDF 5쪽, 버크셔 자사주 매입 기준 문단   
+3                 PDF 2쪽, What You Own   
+4       PDF 2쪽, What You Own의 사업 선정 문단   
+5           PDF 3~4쪽, The Secret Sauce   
+6           PDF 5쪽, 주식 수 감소와 가치 증대의 조건   
+7                   PDF 4쪽, What We Do   
+8      PDF 4~5쪽, What We Do의 경영자 신뢰 문단   
+9   PDF 6~7쪽, Our Not-So-Secret Weapon   
+10                 PDF 1쪽, Mistakes 부분   
+11       PDF 7쪽, 현금성 자산과 주식 소유를 비교한 문단   
+12    PDF 2쪽, 모든 주주를 동등하게 대하는 보고 방침 문단   
+13   PDF 3쪽, What We Do의 비합리적 증권 가격 문단   
+
+                                       review_status  
+0   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+1   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+2   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+3   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+4   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+5   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+6   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+7   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+8   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+9   AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+10  AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+11  AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+12  AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+13  AI_SOURCE_READ_PARAPHRASE_PENDING_STUDENT_REVIEW  
+            rows ratio_all ratio_main groups  \
+train         57   0.59375   0.678571     16   
+validation    15   0.15625   0.178571      3   
+test          12     0.125   0.142857      4   
+development   12     0.125       None      3   
+
+                                                       classes  
+train        {'INVESTMENT_PRINCIPLE': 21, 'HOLDING_FACT': 1...  
+validation   {'INVESTMENT_PRINCIPLE': 9, 'HOLDING_FACT': 2,...  
+test         {'INVESTMENT_PRINCIPLE': 4, 'HOLDING_FACT': 4,...  
+development  {'INVESTMENT_PRINCIPLE': 6, 'HOLDING_FACT': 2,...  
+  sample_id                                 question          target_label  \
+0      Q001                   버핏의 장기투자 투자 원칙은 무엇인가요?  INVESTMENT_PRINCIPLE   
+1      Q002  2020년 주주서한에서 기업 소유에 관해 어떤 판단 기준을 설명하나요?  INVESTMENT_PRINCIPLE   
+2      Q003                  워런 버핏은 장기투자를 어떻게 바라보나요?  INVESTMENT_PRINCIPLE   
+3      Q010                  버핏의 장기 보유 투자 원칙은 무엇인가요?  INVESTMENT_PRINCIPLE   
+
+                     group_id evidence_ids      source_id evidence_type  \
+0  principle_family:ownership    [P2020_1]  [LETTER_2020]        STATED   
+1  principle_family:ownership    [P2020_1]  [LETTER_2020]        STATED   
+2  principle_family:ownership    [P2020_1]  [LETTER_2020]        STATED   
+3  principle_family:ownership    [P2021_1]  [LETTER_2021]        STATED   
+
+  split_bucket                                   review_status  
+0    principle  AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW  
+1    principle  AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW  
+2    principle  AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW  
+3    principle  AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW  
+전체 초안: 96 개; 주 평가 자료: 84 개
+모든 분할 쌍의 그룹·ID·질문 중복 검사 통과
+
+{'model': 'word_tfidf_logreg', 'C': 0.25, 'seed': 42, 'train_rows': 57, 'features': 288, 'iterations': [7], 'train_macro_f1': 1.0, 'validation_macro_f1': 0.9035087719298245, 'validation_accuracy': 0.9333333333333333, 'fit_seconds': 0.08034860799989474}
+{'model': 'word_tfidf_logreg', 'C': 1.0, 'seed': 42, 'train_rows': 57, 'features': 288, 'iterations': [12], 'train_macro_f1': 1.0, 'validation_macro_f1': 0.9035087719298245, 'validation_accuracy': 0.9333333333333333, 'fit_seconds': 0.05658711800003857}
+{'model': 'word_tfidf_logreg', 'C': 4.0, 'seed': 42, 'train_rows': 57, 'features': 288, 'iterations': [14], 'train_macro_f1': 1.0, 'validation_macro_f1': 1.0, 'validation_accuracy': 1.0, 'fit_seconds': 0.06061490000001868}
+{'model': 'char_tfidf_svm', 'C': 0.25, 'seed': 42, 'train_rows': 57, 'features': 1956, 'iterations': 15, 'train_macro_f1': 1.0, 'validation_macro_f1': 0.9035087719298245, 'validation_accuracy': 0.9333333333333333, 'fit_seconds': 0.07958132900000692}
+{'model': 'char_tfidf_svm', 'C': 1.0, 'seed': 42, 'train_rows': 57, 'features': 1956, 'iterations': 38, 'train_macro_f1': 1.0, 'validation_macro_f1': 1.0, 'validation_accuracy': 1.0, 'fit_seconds': 0.0567724239999734}
+{'model': 'char_tfidf_svm', 'C': 4.0, 'seed': 42, 'train_rows': 57, 'features': 1956, 'iterations': 106, 'train_macro_f1': 1.0, 'validation_macro_f1': 1.0, 'validation_accuracy': 1.0, 'fit_seconds': 0.06299334100003762}
+
+               model     C  seed  train_rows  features iterations  \
+0  word_tfidf_logreg  0.25    42          57       288        [7]   
+1  word_tfidf_logreg  1.00    42          57       288       [12]   
+2  word_tfidf_logreg  4.00    42          57       288       [14]   
+3     char_tfidf_svm  0.25    42          57      1956         15   
+4     char_tfidf_svm  1.00    42          57      1956         38   
+5     char_tfidf_svm  4.00    42          57      1956        106   
+
+   train_macro_f1  validation_macro_f1  validation_accuracy  fit_seconds  
+0             1.0             0.903509             0.933333     0.080349  
+1             1.0             0.903509             0.933333     0.056587  
+2             1.0             1.000000             1.000000     0.060615  
+3             1.0             0.903509             0.933333     0.079581  
+4             1.0             1.000000             1.000000     0.056772  
+5             1.0             1.000000             1.000000     0.062993  
+검증 선택: {'selected_model': 'word_tfidf_logreg', 'rule': 'validation_macro_f1_then_accuracy; ties_use_baseline', 'test_used_for_selection': False}
+
+   macro_f1  accuracy  macro_precision  macro_recall              model
+0  0.541667  0.666667         0.583333        0.6250  word_tfidf_logreg
+1  0.607143  0.750000         0.600000        0.6875     char_tfidf_svm
+<IPython.core.display.Image object>
+<IPython.core.display.Image object>
+               model sample_id  \
+0  word_tfidf_logreg      Q038   
+1  word_tfidf_logreg      Q040   
+2  word_tfidf_logreg      Q091   
+3  word_tfidf_logreg      Q095   
+4     char_tfidf_svm      Q040   
+5     char_tfidf_svm      Q091   
+6     char_tfidf_svm      Q095   
+
+                                            question              expected  \
+0       기관 투자자에게만 먼저 소식을 전하나요? 주주를 대하는 공개 원칙이 궁금합니다.  INVESTMENT_PRINCIPLE   
+1  시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요.  INVESTMENT_PRINCIPLE   
+2       COCA COLA CO은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?        HOLDING_CHANGE   
+3   CHEVRON CORP NEW은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?        HOLDING_CHANGE   
+4  시장에 붙은 가격과 사업의 가치를 같은 것으로 봐도 되는지 공개 원칙으로 설명해 주세요.  INVESTMENT_PRINCIPLE   
+5       COCA COLA CO은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?        HOLDING_CHANGE   
+6   CHEVRON CORP NEW은 두 분기를 비교하면 신고 주식 수가 늘었나요 줄었나요?        HOLDING_CHANGE   
+
+     predicted          evidence_ids  
+0  UNSUPPORTED             [P2021_3]  
+1  UNSUPPORTED             [P2022_3]  
+2  UNSUPPORTED  [C_e8947790f3bb1e53]  
+3  UNSUPPORTED  [C_0bbc1ad9aa9346a3]  
+4  UNSUPPORTED             [P2022_3]  
+5  UNSUPPORTED  [C_e8947790f3bb1e53]  
+6  UNSUPPORTED  [C_0bbc1ad9aa9346a3]  
+학습 파일: ['retriever.joblib', 'word_tfidf_logreg.joblib', 'char_tfidf_svm.joblib']
+
+   pipeline_evidence_recall_at_3  supported_test_questions              model
+0                            0.6                        10  word_tfidf_logreg
+1                            0.7                        10     char_tfidf_svm
+질문: 워런 버핏은 장기투자를 어떻게 바라보나요? 예측: INVESTMENT_PRINCIPLE
+공식 주주서한의 원칙을 한국어로 요약합니다. 실제 인물의 새로운 발언을 생성하는 방식은 아닙니다.
+
+[P2020_1] 상장 주식도 기업의 일부 소유로 보고 장기적인 사업 성과를 살핍니다.
+적용 조건: 시장성 주식의 소유 관점을 설명할 때
+
+[P2021_1] 주식을 단기 시장 움직임을 이용하는 수단으로 보기보다 장기 사업 실적에 대한 기대를 바탕으로 소유합니다.
+적용 조건: 주식 보유 목적과 단기 매매의 차이를 설명할 때
+
+[P2022_1] 오래 보유한 소수의 성공적인 사업이 시간이 흐르며 전체 투자 성과에 크게 기여할 수 있다고 설명합니다.
+적용 조건: 코카콜라·아메리칸 익스프레스 보유 사례에서 설명한 장기 효과
+근거: ['P2020_1', 'P2021_1', 'P2022_1'] 
+
+질문: 2025년 1분기 애플 보유 수량은 얼마인가요? 예측: HOLDING_FACT
+Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.
+
+[H_e33bce7a484ecb34] 2025-03-31 APPLE INC (037833100, COM): 300,000,000주, 평가금액 66,639,000,000 USD.
+
+보고 기준일은 2025-03-31이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.
+근거: ['H_e33bce7a484ecb34'] 
+
+질문: 그럼 2분기는요? 예측: HOLDING_FACT
+Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.
+
+[H_2df6adcca523c7fb] 2025-06-30 APPLE INC (037833100, COM): 280,000,000주, 평가금액 57,447,600,000 USD.
+
+보고 기준일은 2025-06-30이며 제출일과 구분합니다. 수정 공시까지 포함한 사후 공개 자료 기준입니다.
+근거: ['H_2df6adcca523c7fb'] 
+
+질문: 분기 사이 컨스텔레이션 보유량은 어떻게 변했나요? 예측: HOLDING_CHANGE
+Berkshire Hathaway의 공개 신고 자료를 기준으로 설명합니다.
+
+[C_9f66e9460974f8b1] CONSTELLATION BRANDS INC (21036P108)의 공개 신고 수량: 12,009,000주 → 13,400,000주, 차이 +1,391,000주. POSITION_INCREASED.
+
+보유 변화는 체결 기록이 아닙니다. 미신고는 비교 계산에서 0으로 두었고, 분할·합병·식별자 변경은 별도 확인하지 못했습니다. 매매 동기는 UNKNOWN입니다.
+근거: ['C_9f66e9460974f8b1'] 
+
+질문: 왜 애플을 매수했나요? 예측: UNSUPPORTED
+확인할 수 없습니다. 이 프로젝트의 13F는 버크셔 기관의 공개 보유 기록이며 버핏 개인의 특정 매매 이유·체결 시점·개인 계좌·미래 주가를 입증하지 않습니다. 일반 원칙을 특정 거래의 동기로 연결하지 않습니다.
+근거: ['SCOPE_13F'] 
+
+
+Colab notebook detected. To show errors in colab notebook, set debug=True in launch()
+* Running on public URL: https://160df0df4c6d0050c0.gradio.live
+
+This share link is temporary and will last for up to 1 week (best effort). For free permanent hosting and GPU upgrades, run `gradio deploy` from the terminal in the working directory to deploy to Hugging Face Spaces (https://huggingface.co/spaces)
+
+<IPython.core.display.HTML object>

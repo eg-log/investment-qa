@@ -1,0 +1,184 @@
+[
+  {
+    "sample_id": "Q007",
+    "question": "버핏의 자사주 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:repurchase",
+    "evidence_ids": [
+      "P2020_3"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q008",
+    "question": "2020년 주주서한에서 내재가치에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:repurchase",
+    "evidence_ids": [
+      "P2020_3"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q009",
+    "question": "워런 버핏은 자사주를 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:repurchase",
+    "evidence_ids": [
+      "P2020_3"
+    ],
+    "source_id": [
+      "LETTER_2020"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q019",
+    "question": "버핏의 환매 가격 투자 원칙은 무엇인가요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:repurchase",
+    "evidence_ids": [
+      "P2022_2"
+    ],
+    "source_id": [
+      "LETTER_2022"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q020",
+    "question": "2022년 주주서한에서 주주 가치에 관해 어떤 판단 기준을 설명하나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:repurchase",
+    "evidence_ids": [
+      "P2022_2"
+    ],
+    "source_id": [
+      "LETTER_2022"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q021",
+    "question": "워런 버핏은 환매 가격을 어떻게 바라보나요?",
+    "target_label": "INVESTMENT_PRINCIPLE",
+    "group_id": "principle_family:repurchase",
+    "evidence_ids": [
+      "P2022_2"
+    ],
+    "source_id": [
+      "LETTER_2022"
+    ],
+    "evidence_type": "STATED",
+    "split_bucket": "principle",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q066",
+    "question": "버크셔의 2025년 1분기 D R HORTON INC (CUSIP 23331A109) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:23331A109:COM:SH:",
+    "evidence_ids": [
+      "H_c6386ff6b940dda4"
+    ],
+    "source_id": [
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q067",
+    "question": "버크셔의 2025년 2분기 D R HORTON INC (CUSIP 23331A109) 보유 수량은 얼마인가요?",
+    "target_label": "HOLDING_FACT",
+    "group_id": "security:23331A109:COM:SH:",
+    "evidence_ids": [
+      "H_da083ee50d55a585"
+    ],
+    "source_id": [
+      "0000950123-25-008343"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q068",
+    "question": "2025년 1분기와 2분기 사이 D R HORTON INC (CUSIP 23331A109) 보유량이 어떻게 달라졌나요?",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:23331A109:COM:SH:",
+    "evidence_ids": [
+      "C_8a3fb536ebeb7339"
+    ],
+    "source_id": [
+      "0000950123-25-008343",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q069",
+    "question": "분기 사이 D R HORTON INC (CUSIP 23331A109) 지분 수량의 증감과 변화 유형을 알려주세요.",
+    "target_label": "HOLDING_CHANGE",
+    "group_id": "security:23331A109:COM:SH:",
+    "evidence_ids": [
+      "C_8a3fb536ebeb7339"
+    ],
+    "source_id": [
+      "0000950123-25-008343",
+      "0000950123-25-008361"
+    ],
+    "evidence_type": "CALCULATED",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q070",
+    "question": "워런 버핏이 D R HORTON INC (CUSIP 23331A109)을 매수한 구체적인 이유가 무엇인가요?",
+    "target_label": "UNSUPPORTED",
+    "group_id": "security:23331A109:COM:SH:",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "security",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  },
+  {
+    "sample_id": "Q084",
+    "question": "2025년 1분기에 매매를 체결한 정확한 날짜를 알려주세요.",
+    "target_label": "UNSUPPORTED",
+    "group_id": "out_of_scope:3",
+    "evidence_ids": [
+      "SCOPE_13F"
+    ],
+    "source_id": [
+      "SEC_13F_FAQ"
+    ],
+    "evidence_type": "UNKNOWN",
+    "split_bucket": "unsupported",
+    "review_status": "AI_AUTHORED_FACT_LINKED_PENDING_STUDENT_REVIEW"
+  }
+]
