@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv*/
+.env
+.env.*
+*.zip
+*.pdf
+raw/
+exports/
+dist/
+.DS_Store
+Thumbs.db

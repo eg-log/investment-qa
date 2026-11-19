@@ -1,0 +1,14 @@
+{
+  "student_id": "202234561",
+  "name": "김은기",
+  "title": "워런 버핏의 투자 원칙과 실제 보유 기록을 활용한 근거 기반 AI 페르소나 챗봇",
+  "github_url": "",
+  "demo_url": "",
+  "data_type": "text/tabular",
+  "training": "scratch supervised learning: TF-IDF + LogisticRegression / LinearSVC (CPU)",
+  "models": [
+    "word_tfidf_logreg",
+    "char_tfidf_svm"
+  ],
+  "primary_metric": "macro_f1"
+}

@@ -1,0 +1,184 @@
+{
+  "source_notebook": "project.ipynb",
+  "source_notebook_sha256": "bee185049a339265d018a18ed8ac091b8eec50942bc7ea4e11b0708973d97fd9",
+  "source_run": "runs/20261119_115608_098551",
+  "source_versions": {
+    "Python": "3.13.18",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0"
+  },
+  "source_cell_count": 24,
+  "source_code_execution_counts": [
+    {
+      "cell_index": 2,
+      "execution_count": 3
+    },
+    {
+      "cell_index": 4,
+      "execution_count": 4
+    },
+    {
+      "cell_index": 6,
+      "execution_count": 5
+    },
+    {
+      "cell_index": 8,
+      "execution_count": 6
+    },
+    {
+      "cell_index": 9,
+      "execution_count": 7
+    },
+    {
+      "cell_index": 11,
+      "execution_count": 8
+    },
+    {
+      "cell_index": 13,
+      "execution_count": 9
+    },
+    {
+      "cell_index": 14,
+      "execution_count": 10
+    },
+    {
+      "cell_index": 16,
+      "execution_count": 11
+    },
+    {
+      "cell_index": 17,
+      "execution_count": 12
+    },
+    {
+      "cell_index": 19,
+      "execution_count": 13
+    },
+    {
+      "cell_index": 20,
+      "execution_count": 14
+    },
+    {
+      "cell_index": 23,
+      "execution_count": 15
+    }
+  ],
+  "selected_model": "word_tfidf_logreg",
+  "selection": {
+    "selected_model": "word_tfidf_logreg",
+    "rule": "validation_macro_f1_then_accuracy; ties_use_baseline",
+    "test_used_for_selection": false
+  },
+  "training_log_from_original_output": [
+    {
+      "model": "word_tfidf_logreg",
+      "C": 0.25,
+      "seed": 42,
+      "train_rows": 57,
+      "features": 288,
+      "iterations": [
+        7
+      ],
+      "train_macro_f1": 1.0,
+      "validation_macro_f1": 0.9035087719298245,
+      "validation_accuracy": 0.9333333333333333,
+      "fit_seconds": 0.08034860799989474
+    },
+    {
+      "model": "word_tfidf_logreg",
+      "C": 1.0,
+      "seed": 42,
+      "train_rows": 57,
+      "features": 288,
+      "iterations": [
+        12
+      ],
+      "train_macro_f1": 1.0,
+      "validation_macro_f1": 0.9035087719298245,
+      "validation_accuracy": 0.9333333333333333,
+      "fit_seconds": 0.05658711800003857
+    },
+    {
+      "model": "word_tfidf_logreg",
+      "C": 4.0,
+      "seed": 42,
+      "train_rows": 57,
+      "features": 288,
+      "iterations": [
+        14
+      ],
+      "train_macro_f1": 1.0,
+      "validation_macro_f1": 1.0,
+      "validation_accuracy": 1.0,
+      "fit_seconds": 0.06061490000001868
+    },
+    {
+      "model": "char_tfidf_svm",
+      "C": 0.25,
+      "seed": 42,
+      "train_rows": 57,
+      "features": 1956,
+      "iterations": 15,
+      "train_macro_f1": 1.0,
+      "validation_macro_f1": 0.9035087719298245,
+      "validation_accuracy": 0.9333333333333333,
+      "fit_seconds": 0.07958132900000692
+    },
+    {
+      "model": "char_tfidf_svm",
+      "C": 1.0,
+      "seed": 42,
+      "train_rows": 57,
+      "features": 1956,
+      "iterations": 38,
+      "train_macro_f1": 1.0,
+      "validation_macro_f1": 1.0,
+      "validation_accuracy": 1.0,
+      "fit_seconds": 0.0567724239999734
+    },
+    {
+      "model": "char_tfidf_svm",
+      "C": 4.0,
+      "seed": 42,
+      "train_rows": 57,
+      "features": 1956,
+      "iterations": 106,
+      "train_macro_f1": 1.0,
+      "validation_macro_f1": 1.0,
+      "validation_accuracy": 1.0,
+      "fit_seconds": 0.06299334100003762
+    }
+  ],
+  "test_metrics_from_original_display": {
+    "word_tfidf_logreg": {
+      "macro_f1": 0.541667,
+      "accuracy": 0.666667,
+      "macro_precision": 0.583333,
+      "macro_recall": 0.625
+    },
+    "char_tfidf_svm": {
+      "macro_f1": 0.607143,
+      "accuracy": 0.75,
+      "macro_precision": 0.6,
+      "macro_recall": 0.6875
+    }
+  },
+  "runtime_nodes_sha256": {
+    "PERIODS": "aa247a95dbf78d1e57768d51da4f878cfbc91d360a78cb56ea2670efda53e7d0",
+    "LABELS": "48b8e73ef6e572a7e63e04af24c2a2fdc9e1a94591cbcdec692f97a95cf06a39",
+    "digest": "5a54cd2770d22b6c3454e3d15f45f9e1b684b6c03b22fbdde227af62a4c17ea7",
+    "read_json": "83b243fd707e08889899b0444e07ebf8a0fbfc0fcc7ca06301c55341fd4d2130",
+    "ALIASES": "c688872e9c98c2349298b79d54d55181af3b5d3839c654a01fb526763549634f",
+    "EvidenceChat": "9869f40b14249128eee4314cafdf6739ee7bb0ca2f2ad378e0c0106094010c84",
+    "create_gradio": "fb42164c97bc04fe611d8c7edfe0d77a698303e8551ec43286ddf07b90ee1a46"
+  },
+  "figures_sha256": {
+    "confusion_matrices.png": "dfcf5b4202dc051ecd176823d81cf549533bb5519aa5e87dd145c1fd1dabbc56",
+    "validation_comparison.png": "15678471618d0b2a9a677af045fc7e8d2042fdaea8e8eed1f680e24803485c0a"
+  },
+  "notebook_modified": false,
+  "training_rerun": false,
+  "test_metrics_recomputed": false,
+  "gradio_version_origin": "deployment_pin; original_notebook_only_specifies_gradio_6"
+}
