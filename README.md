@@ -17,7 +17,7 @@
 
 핵심 소스와 실행 결과는 [project.ipynb](project.ipynb)에 수록하였다. 학습 가중치, 평가 결과, 근거 데이터는 각각 [models](models/README.md), [평가 분석](docs/EVALUATION.md), [데이터 설명](data/README.md)에서 확인할 수 있다.
 
-## 1. 문제정의
+## 1. 문제 정의
 
 | 요소 | 정의 |
 |---|---|
@@ -42,7 +42,7 @@
 
 공식 출처: [SEC Form 13F 데이터셋](https://www.sec.gov/data-research/sec-markets-data/form-13f-data-sets), [Berkshire Hathaway 주주서한](https://www.berkshirehathaway.com/letters/letters.html). 주주서한의 보고연도와 발행연도는 구분하여 기록하였다. 원문에 별도 이용 조건이 있는 경우 해당 조건이 적용된다.
 
-### 데이터 규모와 구성
+### 데이터 전처리
 
 SEC 원본 INFOTABLE은 각각 **3,440,002행·3,360,306행**이다. CIK `0001067983`과 기관명, 보고 기준일을 확인하여 Berkshire Hathaway의 공시 3건에서 228행을 추출하였다. 이를 집계한 분기별 증권 보유 기록은 80건이며, 두 분기 비교 대상 증권은 42건이다. 보고 기준일은 **2025-03-31·2025-06-30**으로, ZIP의 제출 기간과 구분된다.
 
